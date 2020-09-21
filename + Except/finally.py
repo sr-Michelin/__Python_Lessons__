@@ -6,7 +6,7 @@ try:
     f = open('text.txt')
     while True:
         line = f.readline()
-        if  len (line) ==0:
+        if  len (line) == 0:
             break
         print(line,end = '')
         ti.sleep(2)
@@ -16,4 +16,4 @@ except KeyboardInterrupt:
 
 finally:
     f.close()
-    print('(Очищення: закриття файла)')
+    print('\n(Очищення: закриття файла)')

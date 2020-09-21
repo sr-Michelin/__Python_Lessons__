@@ -24,6 +24,7 @@ class group (student):
         print("Я підклас - група")
     pass
 
+
 fzf51 = group(5)  # my_mark = 5
 fzf51.s_kto_ya()  # Я підклас - група
 fzf51.num()

@@ -6,7 +6,7 @@ print('fzf_41: ',fzf_41)
 
 
 
-fzf_51 = ('sr. Mike_Shevchenko','Denys_Ohrymovich','Yartna_Ostapchuk',fzf_41)
+fzf_51 = ('sr. Mike_Shevchenko','Denys_Ohrymovich','Yaryna_Ostapchuk',fzf_41)
 
 print('')
 print('New students: ',end=' ')

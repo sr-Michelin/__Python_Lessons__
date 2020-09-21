@@ -1,6 +1,6 @@
 a=5;b=3;c=True;d=False;
 print('a=',a,',b=',b,',c=',c,',d=',d)
-print('a+b=',a+b)   # Ясноd
+print('a+b=',a+b)   # Ясно
 print('a-b=',a-b)   # Ясно
 print('a*b=',a*b)   # Ясно
 print('a**b=',a**b) # Ясно

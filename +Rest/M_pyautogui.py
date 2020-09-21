@@ -13,6 +13,7 @@ pq.click(70,896,duration=0.5)'''
 '''pq.typewrite("'Hello World!'", 0.1) # записує введене речення у будь яке поле
 pq.typewrite(["enter"])                # натискає вказану клавішу'''
 
+
 '''ti.sleep(2)
 pq.hotkey("winleft")                   # The Emperor Protects
 ti.sleep(1)
