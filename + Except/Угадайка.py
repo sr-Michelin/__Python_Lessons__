@@ -3,10 +3,10 @@ with open('py.txt','r') as f:
         print()
 
 running = True
-num = int(line)
+num = float(line)
 while running:
     try:
-         num_predicted = int(input('\nВведіть число: '))
+         num_predicted = float(input('\nВведіть число: '))
          if num_predicted > num:
              print('Введене число більше шуканого')
          elif num_predicted < num:
