@@ -6,6 +6,6 @@ def is_palindrome (text):
 
 smth = input('Ведіть текст: ')
 if is_palindrome(smth):
-    print('Ви ввели поліндром')
+    print('Ви ввели поліндром!')
 else:
     print('Ви ввели не поліндром')

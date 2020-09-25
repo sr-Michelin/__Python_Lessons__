@@ -1,13 +1,3 @@
-import turtle as tur
-
-p1 = tur.Pen()
-p2 = tur.Pen()
-
-p1.forward(100)
-p2.left(90)
-p2.forward(100)
-
-
 class student ():
     def s_kto_ya(self):
         print("Я клас - студент")
