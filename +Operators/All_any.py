@@ -10,7 +10,7 @@ if any(a1):
 
 if any(a1) and not all(a1):
     print('Є "True" і "False"')
-
+print('-------------------------------------')
 a2 = [1,2,3,5,6,79,10,136,25,456]
 n2 = 2
 if any(num>n2 for num in a2):
