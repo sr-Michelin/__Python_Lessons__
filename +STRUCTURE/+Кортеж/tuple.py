@@ -1,22 +1,21 @@
 import math
 
-fzf_41 = ('Vasyl_Polcanov', 'Krystyna_Kovach','Mike_Tonne', 'Ilya_Kosyak-Shvaga', 'Lybomyr_Probytyj-Sosok', 'Romchyk_Bukhach-Kyrylyk','Alonya_Anime-Nicolayeva')
-print('Count of group fzf_41: ',len(fzf_41))
-print('fzf_41: ',fzf_41)
+fzf_41 = ('Vasyl_Polcanov', 'Krystyna_Kovach','Mike_Tonne', 'Ilya_Kosyak-Shvaga',
+          'Lybomyr_Probytyj-Sosok', 'Romchyk_Bukhach-Kyrylyk','Alonya_Anime-Nicolayeva')
+fzf_42 = ('Mike_Shevchenko','Denys_Ohrymovich','Yaryna_Ostapchuk')
 
+print('{0} students from old fzf_42: '.format(len(fzf_41)),end='')
+for i in fzf_41:
+    print(i,end=';  ')
 
+print('\n{0} students from old fzf_42: '.format(len(fzf_42)),end='')
+for i in fzf_42:
+    print(i,end=';  ')
 
-fzf_51 = ('sr. Mike_Shevchenko','Denys_Ohrymovich','Yaryna_Ostapchuk',fzf_41)
+fzf_51 = fzf_41 + fzf_42
+print('\n{0} students from fzf_51: '.format(len(fzf_51)),end='')
+for i in fzf_51:
+    print(i,end=';  ')
 
-print('')
-print('New students: ',end=' ')
-
-for i in range(3):
-    print('',fzf_51[i],end=',')
-    i+=1
-
-print('\nfzf_51: ',fzf_51)
-lucky_man = math.floor(int(len(fzf_51)-1+len(fzf_41)+12)*0.4)
-print('Count of group fzf_51: ',len(fzf_51)-1+len(fzf_41))
-print('Count of "lucky man" fzf_51: ',lucky_man)
-
+lucky_man = math.floor((len(fzf_51)+10)*0.4-1)
+print('\nCount of "lucky man" from  fzf_51: ',lucky_man)
