@@ -22,5 +22,3 @@ class Parson:
 
 p = Parson('Mike')
 p.say_hi()
-
-
