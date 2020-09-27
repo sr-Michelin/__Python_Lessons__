@@ -1,3 +1,17 @@
+# Наследование подразумевает то, что дочерний класс содержит все атрибуты родительского класса,
+# при этом некоторые из них могут быть переопределены или добавлены в дочернем.
+
+class Mydict (dict):
+    def get (self, key, default = 0):
+        return dict.get(self, key, default)
+
+a = dict  (a = 1,b = 2)
+b =Mydict (a = 1,b = 2)
+
+print ('\t',a,b,'\n')
+
+#-----------------------------------------------------------------
+
 class uni_Member:
     def __init__(self,name, age):
         self.name = name
