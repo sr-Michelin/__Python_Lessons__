@@ -35,7 +35,7 @@ print(a)
 # Заокруглення
 a = 10.556
 print(round(a))
-    # або
+# або
 import math
 print(math.floor(a))   # в меншу сторону
 print(math.ceil(a))    # в більшу сторону
@@ -54,6 +54,7 @@ elif what == "-":
     print("Результат:", c)
 else:
     print("Вибрана неправильна операція!") 
+
 # Колір тексту
 from colorama import init
 from colorama import Fore, Back, Style
@@ -61,6 +62,7 @@ init()
 print(Fore.LIGHTRED_EX)
 print(Style.BRIGHT)
 print("Hello World!")
+
 '''
 # Створення exe-шника
 'pyinstaller -F test.py'

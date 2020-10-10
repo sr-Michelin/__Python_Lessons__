@@ -63,7 +63,7 @@ print(A)
 "-----------------for------------------------------------"
 # Запис "Hello World" з подвоєнням кожної літери (єб#та якась)
 for j in "Hello World":
-    print(j*2, end="")
+    print(j*2, end="")7
 "---------------continue---------------------------"
 # Оператор continue який пропускає одну ітерацію у циклі
 for j in "Hello World":
@@ -167,14 +167,14 @@ print(D5)
 D6={A:A**2 for A in range(11)} #range -у проміжку, запис квадратів чисел проміжку до 10
 print('Квадрати чисел: ',D6,end="")
 
-
+"""
 # Приклад запису бази даних студента:
-student ={'name':{'last name':'Шевченко', 'first name':'Михайло','middle name':'Сергійович'},'adress':['м.Львів','вул.Пачічна','буд.62-Б','к.407'],'tell':{'t_first':'380683168590','t_second':"3-99-11", 't_third':"Іди в ж#пу"}
+student ={'name':{'last name':'Шевченко', 'first name':'Михайло','middle name':'Сергійович'},'adress':['м.Львів','вул.Пачічна','буд.62-Б','к.407'],'tell':{'t_first':'380683168590','t_second':"3-99-11", 't_third':"Іди в ж#пу"}}
 print(student['name']['first name']) #пошук по ключам
 print(student['adress'][1])
 print("Values: ",student.values())
 print("Keys: ",student.keys())
-
+"""
 # Власний приклад:
 d = {'name':'Mike', 'surname':'Shevchenko'}
 print(d, ' None')
@@ -298,7 +298,7 @@ print(f2(1,2,3))
 def f3 (**args2): # **словник
     return  args2
 print(f3(short='dict',longer="dictionary"))
-"--------------------------------"
+"--------------------------------" 
 def f4 (**args3):
     return args3
 print(f4(short='dict',longer="dictionary"))
@@ -375,8 +375,8 @@ print(a(15,56))
 "---------------------------ООП------------------------------------------------------------------------"
 # Створення обєктів на основі класів
 class Person:
-    name = "Mike"
-    age = 21
+    name = ""
+    age = 
 
 ivan = Person()
 ivan.name = "Ivan"
