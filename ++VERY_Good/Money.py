@@ -7,7 +7,7 @@ class Currency:
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 OPR/69.0.3686.95'}
 
     current_converted_priece = 27.72
-    diference = 0.5
+    diference = 0.45
 
     def __int__(self):
         self.current_converted_priece = float(self.current_converted_priece)
@@ -21,11 +21,11 @@ class Currency:
     def check_currency(self):
         currency = float(self.get_currency_price().replace(",","."))
         if currency >= self.current_converted_priece + self.diference:
-            print("Курс сильно виріс. Пора щось міняти...")
+            print("\nКурс сильно виріс. Пора щось міняти...")
         elif currency <= self.current_converted_priece - self.diference:
-            print("Курс сильно впав. Пора щось міняти...")
+            print("\nКурс сильно впав. Пора щось міняти...")
         print ('Зараз 1 долар = '+ str(currency) +' грн.')
-        time.sleep(5)
+        time.sleep(1)
         self.check_currency()
 
 currency = Currency()
