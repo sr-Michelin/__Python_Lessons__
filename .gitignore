@@ -123,3 +123,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
++Arithmetics/тб_множення.py
++Arithmetics/тб_множення.py
+*.py
+++SERVER--/index.html
+++SERVER--/servak.py
++Arithmetics/arithmetics.py
++Arithmetics/diff.py
++Arithmetics/Newton.py
++Arithmetics/sum.py
++Arithmetics/тб_множення.py
