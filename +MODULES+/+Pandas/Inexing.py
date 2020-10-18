@@ -6,14 +6,15 @@ init()
 Frame = pd.read_csv('CSV1.csv', header=0, sep=';')
 print(Fore.GREEN, Frame, '\n')
 
-Frame = Frame.append({'Name': 'Max', 'Sname': 'Varynyca'}, ignore_index=True)
+Frame = Frame.append({'Name': 'Max', 'Sname': 'Varynyca'}, ignore_index=True)  # Новий рядок
 print(Frame, '\n')
 
-Frame['Birth'] = ['04.11.1998'] + ['01.01.1998'] * 3
+Frame['Birth'] = ['04.11.1998'] + ['01.01.1998'] * 3  # Новий стовпець
 print(Frame, '\n')
 
-'---------------new-------------------'
-print(Frame.dtypes, '\n')  # Тип обєк
+'---------------new------------------'
+print(Frame.dtypes, '\n')  # Тип обєкта
 
-Frame.Birth = Frame.Birth.apply(pd.to_datetime)  #
+Frame.Birth = Frame.Birth.apply(pd.to_datetime)  # Зміна типу подачі дати
 print(Frame)
+
