@@ -1,15 +1,12 @@
-import  numpy as np
+import numpy as np
+from math import log
 import matplotlib.pyplot as plt
 
-x = np.arange(-10,10,0.01)
+'''plt.plot([1,2,3,5],[1,3,4,5])
+plt.show()'''
 
-fig1 = plt.figure(1)
-plt.title ('y = (x+1)^(1/x)')
-#plt.axis ([-1,2,-1,1])
-plt.plot(x,(x+1)**(1/x))
-
-fig2 = plt.figure(2)
-plt.plot(x,np.cos(x))
-
+x = np.arange(-10,10,0.1)
+y = x**4
+plt.plot(x,y)
 plt.show()
 
