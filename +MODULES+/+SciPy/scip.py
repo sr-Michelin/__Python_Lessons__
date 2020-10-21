@@ -9,9 +9,11 @@ def f(x):
     return (x[0] - 1) ** 3 + (x[1] - 2) ** 2 + 10
 
 
-print(Fore.LIGHTCYAN_EX, '\nЗначення ф-ції за аргументів [3,2,0.1]: ', f([1, 2]))
+
+print(Fore.LIGHTCYAN_EX, '\nЗначення ф-ції за аргументів [1, 2]: ', f([1, 2]))
 
 x_min = optimize.minimize(f, [1, 1])  # заданий початковий в-р [1,1]
+x_min = optimize.minimize(f, [1])
 print('Процес опитмізації ф-ції:\n', x_min, '\n')
 
 a = np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
