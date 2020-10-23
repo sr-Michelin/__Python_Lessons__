@@ -1,17 +1,23 @@
-class student ():
+class student():
     def s_kto_ya(self):
         print("Я клас - студент")
+
     pass
 
-class group (student):
-    def __init__(self,_mark):
-        self.my_mark =_mark
-    def read_mark (self):
-        print("Моя оцінка: %s" %self.my_mark)
-    def write_mark (self,new_mark):
+
+class group(student):
+    def __init__(self, _mark):
+        self.my_mark = _mark
+
+    def read_mark(self):
+        print("Моя оцінка: %s" % self.my_mark)
+
+    def write_mark(self, new_mark):
         self.my_mark = new_mark
-    def num (self):
+
+    def num(self):
         print("Я підклас - група")
+
     pass
 
 

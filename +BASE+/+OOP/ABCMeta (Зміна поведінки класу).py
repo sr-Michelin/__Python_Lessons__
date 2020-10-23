@@ -4,8 +4,9 @@
 
 from abc import *
 
-class uni_Member (metaclass=ABCMeta):
-    def __init__(self,name, age):
+
+class uni_Member(metaclass=ABCMeta):
+    def __init__(self, name, age):
         self.name = name
         self.age = age
         print('Створений uni_Member: {0}'.format(self.name))
@@ -13,12 +14,12 @@ class uni_Member (metaclass=ABCMeta):
     @abstractmethod
     def tell_about_myself(self):
         # Вивід інформації
-        print('І\'мя: {0}. Вік: {1}.'.format(self.name,self.age), end=' ')
+        print('І\'мя: {0}. Вік: {1}.'.format(self.name, self.age), end=' ')
 
 
-class Teacher (uni_Member):
-    def __init__(self,name,age,salary):
-        uni_Member.__init__(self,name,age)
+class Teacher(uni_Member):
+    def __init__(self, name, age, salary):
+        uni_Member.__init__(self, name, age)
         self.salary = salary
         print('Створений викладач: {0}'.format(self.name))
 
@@ -27,9 +28,9 @@ class Teacher (uni_Member):
         print('Зарплата: {0:d}.'.format(self.salary))
 
 
-class Student (uni_Member):
-    def __init__(self,name,age, course):
-        uni_Member.__init__(self,name,age)
+class Student(uni_Member):
+    def __init__(self, name, age, course):
+        uni_Member.__init__(self, name, age)
         self.course = course
         print('Створений студень: {0}'.format(self.name))
 
@@ -38,14 +39,12 @@ class Student (uni_Member):
         print('Курс {0:d}.'.format(self.course))
 
 
-t = Teacher('Юрій Степанович Криницький', 40, 20000)
+t = Teacher('Юрій Степанович Криницький', 45, 40000)
+t1 = Teacher('Володимир Михайлович Ткачук', 47, 41000)
 s = Student('Михайло Сергійович Шевченко', 22, 5)
 
 print()
 
-members = [t,s]
+members = [t, t1, s]
 for member in members:
     member.tell_about_myself()
-
-# Мы можем объявить метод tell класса SchoolMember абстрактным,
-# и таким образом автоматически запретим создавать экземпляры класса SchoolMember.

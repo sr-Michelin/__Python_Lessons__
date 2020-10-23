@@ -5,11 +5,11 @@ running = True
 
 while running:
     try:
-        quess = int(input('Введіть ціле число: '))
-        if quess == a:
+        ques = int(input('Введіть ціле число: '))
+        if ques == a:
             print('Ви вгадали!')
             running = False
-        elif quess < a:
+        elif ques < a:
             print('Введене чило менше загаданого.')
         else:
             print('Введене чило більше загаданого.')

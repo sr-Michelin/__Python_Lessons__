@@ -1,15 +1,15 @@
-
 class Person:
     def Say_Hi(self):
         print('Hello World!')
 
-    def Func(self,x,y,z):
-        res = x+y+z
-        print('Сума:',res)
+    def Func(self, x, y, z):
+        res = x + y + z
+        print('Сума:', res)
         print('')
         return res
 
-p = Person ()
+
+p = Person()
 p.Say_Hi()
 
 er = input('Напишіть "stop" для зупиненя циклу: ')
@@ -19,6 +19,6 @@ while True:
         break
 
     try:
-        p.Func(int(input('X: ')),int(input('Y: ')),int(input('Z: ')))
+        p.Func(int(input('X: ')), int(input('Y: ')), int(input('Z: ')))
     except ValueError:
         print('Було введенно не число! ')
