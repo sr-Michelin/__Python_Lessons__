@@ -29,7 +29,8 @@ print('Евклідова відстань між a i b = {0}'.format(np.linalg.
 a_ = a.reshape((1, 3))
 b_ = b.reshape((1, 3))
 
-# Перевід в-ра у стовбець через np.newaxis
+
+# Перевід в-ра через np.newaxis
 d = np.array([1, 2, -1, 10])
 print('{0}, розмірність - {1}'.format(d, d.shape))
 print('Вектор {0} з newaxis ---> рядок: {1}, розмірність {2} '.format(d, d[np.newaxis, :], d[np.newaxis, :].shape))
