@@ -25,12 +25,11 @@ print('Евклідова норма в-ра a: {0}'.format(np.linalg.norm(a, or
 print('\nМанхетенська відстань між a i b = {0}'.format(np.linalg.norm(a - b, ord=1)))
 print('Евклідова відстань між a i b = {0}'.format(np.linalg.norm(a - b, ord=2)))
 
-# Перевід в-ра у стовбець
+# Перевід в-ра у матрицю-рядок
 a_ = a.reshape((1, 3))
 b_ = b.reshape((1, 3))
 
-
-# Перевід в-ра через np.newaxis
+# Перевід в-ра у матрицю через np.newaxis
 d = np.array([1, 2, -1, 10])
 print('{0}, розмірність - {1}'.format(d, d.shape))
 print('Вектор {0} з newaxis ---> рядок: {1}, розмірність {2} '.format(d, d[np.newaxis, :], d[np.newaxis, :].shape))
