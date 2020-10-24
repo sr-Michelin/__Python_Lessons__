@@ -18,11 +18,11 @@ print('Різниця a і b: ', a - b)
 print('Добуток a і b: ', a * b)
 
 # Норми
-print('\nМанхетинська норма в-ра a: {0}'.format(np.linalg.norm(a, ord=1)))
+print('\nМанхетенська норма в-ра a: {0}'.format(np.linalg.norm(a, ord=1)))
 print('Евклідова норма в-ра a: {0}'.format(np.linalg.norm(a, ord=2)))
 
 # Відстань між векторами
-print('\nМанхетинська відстань між a i b = {0}'.format(np.linalg.norm(a - b, ord=1)))
+print('\nМанхетенська відстань між a i b = {0}'.format(np.linalg.norm(a - b, ord=1)))
 print('Евклідова відстань між a i b = {0}'.format(np.linalg.norm(a - b, ord=2)))
 
 # Перевід в-ра у стовбець
@@ -36,7 +36,7 @@ print('Вектор {0} з newaxis ---> рядок: {1}, розмірність 
 print('Вектор {0} з newaxis ---> стовпець: \n{1}, розмірність {2} '.format(d, d[:, np.newaxis], d[:, np.newaxis].shape))
 
 # Відстань між векторами через  scipy...cdist
-print('\nМанхетинська відстань між a i b = {0}  - [cdist]'.format(cdist(a_, b_, metric='cityblock')))
+print('\nМанхетенська відстань між a i b = {0}  - [cdist]'.format(cdist(a_, b_, metric='cityblock')))
 print('Евклідова відстань між a i b = {0}  - [cdist]'.format(
     cdist(a[np.newaxis, :], b[np.newaxis, :], metric='euclidean')))
 
