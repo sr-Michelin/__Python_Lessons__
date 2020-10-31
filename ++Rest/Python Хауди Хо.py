@@ -66,6 +66,4 @@ print("Hello World!")
 
 # Створення exe-шника
 'pyinstaller -F test.py'
-# Погода
-
 """
