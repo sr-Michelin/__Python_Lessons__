@@ -8,25 +8,25 @@ from colorama import Fore, Back, Style
 
 init()
 
-print(Fore.CYAN,Style.BRIGHT)
+print(Fore.CYAN, Style.BRIGHT)
 print("# Перша програма у Python для об'єктивної оцінки своїх можливостей")
 print("# Гумор ради гумору")
 
-print(Fore.YELLOW,Style.BRIGHT)
+print(Fore.YELLOW, Style.BRIGHT)
 
 name = input("Вкажіть Ваше імя: ")
 
 try:
     C = int(input("Якої довжини Ваш Python: "))
 except ValueError:
-    print("Давайте заново,",name)
+    print("Давайте заново,", name)
     C = 0
-if C >= 16 and C <= 30:
-    print("Маєте гарний скіл, козаче",name)
+if 16 <= C <= 30:
+    print("Маєте гарний скіл, козаче", name)
 elif C > 30:
-    print(name,",пи#дите, як дишете")
+    print(name, ",пи#дите, як дишете")
 else:
-    print("Маловато буде,",name,"...")
+    print("Маловато буде,", name, "...")
     print("")
     time.sleep(2)
     webbrowser.open_new_tab('https://www.youtube.com/playlist?list=PL0lO_mIqDDFXgfuxOEDTCwsWmKezOaDTu')
