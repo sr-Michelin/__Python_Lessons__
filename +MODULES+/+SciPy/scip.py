@@ -11,7 +11,7 @@ def f(x):
 
 print(Fore.LIGHTCYAN_EX, '\nЗначення ф-ції за аргументів [1, 2]: ', f([1, 2]))
 
-x_min = optimize.minimize(f,[1, 1])  # заданий початковий в-р [1,1]
+x_min = optimize.minimize(f, np.array([1, 1]))  # заданий початковий в-р [1,1]
 
 print('Процес опитмізації ф-ції:\n', x_min, '\n')
 print('Процес опитмізації ф-ції (скорочений):\n', x_min.x, '\n')
