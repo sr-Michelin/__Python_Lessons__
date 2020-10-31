@@ -22,16 +22,16 @@ class Currency:
     def get_currency_price(self):
         full_page = requests.get(self.DORAR_UAH, headers=self.headers)
         soup = BeautifulSoup(full_page.content, 'html.parser')
-        convert = soup.findAll("span", {"class": "DFlfde", "class": "SwHCTb", "data-precision": 2})
+        convert = soup.findAll("span", {"class": "SwHCTb", "data-precision": 2})
         return convert[0].text
 
     def check_currency(self):
-        currency = float(self.get_currency_price().replace(",", "."))
-        if currency >= self.current_converted_priece + self.diference:
+        currenc = float(self.get_currency_price().replace(",", "."))
+        if currenc >= self.current_converted_priece + self.diference:
             print("\nКурс сильно виріс. Пора щось міняти...")
-        elif currency <= self.current_converted_priece - self.diference:
+        elif currenc <= self.current_converted_priece - self.diference:
             print("\nКурс сильно впав. Пора щось міняти...")
-        print('Зараз 1 долар = ' + str(currency) + ' грн.')
+        print('Зараз 1 долар = ' + str(currenc) + ' грн.')
         time.sleep(1)
         self.check_currency()
 
