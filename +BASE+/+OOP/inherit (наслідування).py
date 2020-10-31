@@ -18,7 +18,7 @@ class uni_Member:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        print('Створений uni_Member: {0}'.format(self.name))
+        # print('Створений uni_Member: {0}'.format(self.name))
 
     def tell_about_myself(self):
         # Вивід інформації
@@ -47,11 +47,11 @@ class Student(uni_Member):
         print('Курс {0:d}.'.format(self.course))
 
 
-t = Teacher('Юрій Степанович Криницький', 40, 20000)
-s = Student('Михайло Сергійович Шевченко', 22, 5)
+t1 = Teacher('Юрій Степанович Криницький', 40, 20000)
+s1 = Student('Михайло Сергійович Шевченко', 22, 5)
 
 print()
 
-members = [t, s]
+members = [t1, s1]
 for member in members:
     member.tell_about_myself()

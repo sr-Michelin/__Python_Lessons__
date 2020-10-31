@@ -5,8 +5,8 @@ from colorama import init, Fore
 
 init()
 
-x = np.arange(-10, 10, 0.1)
-y = np.exp(- x / 3.0) + np.random.randn(
+x = np.arange(-10., 10., 0.1)
+y = np.exp(- x / 3.) + np.random.randn(
     len(x)) * 0.5  # доданок {np.random.randn(len(x)) * 0.08} вказує на наявність шумів у ф-ції
 
 print(Fore.GREEN, end='')

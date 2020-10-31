@@ -26,7 +26,8 @@ print()
 
 
 def NumMax(x, y):
-    'Something good'
+    """Something good"""
+
     x = int(x)
     y = int(y)
 

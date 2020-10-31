@@ -1,11 +1,14 @@
+print()
+
+
 class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        print('New person -  %s' % name)
+        # print('New person -  %s' % name)
 
     def tell_about_me(self):
-        print('Name: %s, age: %s' % (self.name, self.age), end=' ')
+        print('Name: %s, age: %s,:::,' % (self.name, self.age), end=' ')
 
 
 class Student(Person):
@@ -17,8 +20,8 @@ class Student(Person):
 
     def tell_about_me(self):
         Person.tell_about_me(self)
-        print('Course:  %s' % self.course, end=', ')
-        print('Have scholarship? %s' % self.money)
+        print('course:  %s' % self.course, end=', ')
+        print('have scholarship? %s' % self.money)
 
 
 s1 = Student('Mike Shevchenko', 22, 5, 'Yes')
@@ -26,7 +29,8 @@ s2 = Student('Roman Kyrylyk', 21, 5, 'No')
 s3 = Student('Kolya Gusev', 21, 5, 'No')
 s4 = Student('Denys Ohrymovich', 21, 5, 'Yes')
 s5 = Student('Jorik', 24, 5, 'No!')
-
-s = [s1, s2, s3, s4, s5]
-for i in s:
-    i.tell_about_me()
+s6 = Student('Yaryna Ostapchuk', 21, 5, 'No:(')
+print()
+list_ = [s1, s2, s3, s4, s5, s6]
+for item in list_:
+    item.tell_about_me()
