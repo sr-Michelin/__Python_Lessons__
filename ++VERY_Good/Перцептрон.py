@@ -23,7 +23,6 @@ print("")
 n = int(input("Введіть кількість ітерацій: "))
 outputs = np.zeros(0)
 
-
 # Метод зворотнього розповсюдження
 for i in range(n):
     input_layer = training_inputs

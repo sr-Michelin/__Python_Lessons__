@@ -1,4 +1,4 @@
 # Акуратний спосіб виведення строк
-with open('using_with.txt') as f:
+with open('using_with.txt', 'r') as f:
     for line in f:
-        print(line, end = '')
+        print(line, end='')

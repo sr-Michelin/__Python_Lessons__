@@ -2,14 +2,15 @@
 
 import time
 
+line = [' ']
+f = line
+
 try:
-    f = open('text.txt')
-    while True:
+    f = open('using_with.txt')
+    while len(line) > 0:
         line = f.readline()
-        if len(line) == 0:
-            break
         print(line, end='')
-        time.sleep(2)
+        time.sleep(0.5)
 
 except KeyboardInterrupt:
     print('!! Відміна читання файлу')

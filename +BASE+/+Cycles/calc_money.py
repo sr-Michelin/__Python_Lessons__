@@ -1,9 +1,9 @@
-found_coins = 9300
+ti = 2
+found_coins = 11740
 ad_coins = 1660
-ad_coins_ex = 4200
+ad_coins_ex = 1050*4
 used_coins = 1700
 coins = found_coins
-ti = 3
 
 # print(found_coins+ti*(ad_coins_from_work+ad_coins-used_coins))
 
