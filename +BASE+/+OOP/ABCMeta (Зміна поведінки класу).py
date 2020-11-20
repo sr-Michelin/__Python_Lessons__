@@ -9,7 +9,7 @@ class uni_Member(metaclass=ABCMeta):
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        print('Створений uni_Member: {0}'.format(self.name))
+        # print('Створений uni_Member: {0}'.format(self.name))
 
     @abstractmethod
     def tell_about_myself(self):
@@ -25,7 +25,7 @@ class Teacher(uni_Member):
 
     def tell_about_myself(self):
         uni_Member.tell_about_myself(self)
-        print('Зарплата: {0:d}.'.format(self.salary))
+        print('Зарплата: {0}.'.format(self.salary))
 
 
 class Student(uni_Member):
@@ -36,7 +36,7 @@ class Student(uni_Member):
 
     def tell_about_myself(self):
         uni_Member.tell_about_myself(self)
-        print('Курс {0:d}.'.format(self.course))
+        print('Курс {0}.'.format(self.course))
 
 
 t = Teacher('Юрій Степанович Криницький', 45, 40000)

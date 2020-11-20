@@ -30,7 +30,9 @@ s3 = Student('Kolya Gusev', 21, 5, 'No')
 s4 = Student('Denys Ohrymovich', 21, 5, 'Yes')
 s5 = Student('Jorik', 24, 5, 'No!')
 s6 = Student('Yaryna Ostapchuk', 21, 5, 'No:(')
+
 print()
+
 list_ = [s1, s2, s3, s4, s5, s6]
 for item in list_:
     item.tell_about_me()

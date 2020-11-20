@@ -2,8 +2,6 @@ class student():
     def s_kto_ya(self):
         print("Я клас - студент")
 
-    pass
-
 
 class group(student):
     def __init__(self, _mark):
@@ -17,8 +15,6 @@ class group(student):
 
     def num(self):
         print("Я підклас - група")
-
-    pass
 
 
 fzf51 = group(5)  # my_mark = 5
