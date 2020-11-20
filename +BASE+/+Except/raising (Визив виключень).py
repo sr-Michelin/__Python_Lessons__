@@ -7,11 +7,9 @@ class ShortInputException(Exception):
 
 try:
     text = input('Введіть щось: ')
+
     if len(text) < 3:
         raise ShortInputException(len(text), 3)
-
-except EOFError:
-    print('Ну зачем вы сделали мне EOF?')
 
 except ShortInputException as ex:
     print(

@@ -7,7 +7,7 @@ with open('guessing.txt', 'r') as f:
         print()
 
 running = True
-num = int(line)  # num = 21
+num = int(line)  # num = 22
 while running:
     try:
         num_predicted = int(input('Введіть число: '))
@@ -21,4 +21,6 @@ while running:
         print('Ви ввели не число! \nTry again!')
 
     finally:
-        print('Блок finally\n')
+        f.close()
+        print('Блок finally')
+        print('(Очищення: закриття файла)')

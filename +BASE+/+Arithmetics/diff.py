@@ -8,7 +8,3 @@ while True:
     f = 2**t
     df = diff(f)
     print('diff({0}) = {1}'.format(f, df))
-
-
-
-

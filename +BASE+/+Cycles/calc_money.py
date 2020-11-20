@@ -10,4 +10,4 @@ coins = found_coins
 for i in range(0, ti):
     coins = coins + ad_coins + ad_coins_ex - used_coins
     print('Місяць {0}, {1} гривень. '.format(i + 1, coins))
-    # print('Місяць %s, %s гривень.' %(i+1,coins))
+
