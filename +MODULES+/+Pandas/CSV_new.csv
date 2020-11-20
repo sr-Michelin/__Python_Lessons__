@@ -1,3 +1,6 @@
-Name;Sname;Is_Student?
-Mike;Shevchenko;True
-Mykola;Gusev;True
+Name;Sname;Birth;Sex
+Mike;Shevchenko;1998-04-11;Male
+Ivan;Denysyk;1998-01-01;Male
+Mykola;Gusev;1998-01-01;Male
+Max;Varynyca;1998-01-01;Male
+Yaryna;Ostapchuk;1999-05-14;Female

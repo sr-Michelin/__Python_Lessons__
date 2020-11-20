@@ -6,6 +6,7 @@ a = np.array([1, 0, 1], dtype=int)
 b = np.array([True, False, False], dtype=int)
 c = np.arange(0, 10, 1, dtype=int)
 L = np.linspace(0, 1, 5, endpoint=1)  # 5 точок у відрізку [0,1]
+
 print(a, type(a))
 print(b, type(b))
 print(c, type(c))
