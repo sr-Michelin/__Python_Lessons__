@@ -5,7 +5,7 @@ L = pow(10, -6)
 
 def f(x_, x, i):
     while True:
-        x_ = sin(x) ** 2 + cos(x) ** 2
+        x_ = sin(x) ** 2 + cos(x) ** 2 # used function
         x += L
         i += 1
         if fabs(x_ - x) / x <= L:

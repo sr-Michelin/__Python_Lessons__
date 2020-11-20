@@ -7,6 +7,7 @@ print("3")
 ti.sleep(1)
 print("2")
 ti.sleep(1)
+
 print("1")
 
 ti.sleep(2)

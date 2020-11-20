@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
-# Зберігаєм у винляді txt:
+# Зберігаєм у вигляді txt:
 def save():
     with open('parse_info.txt', 'a') as file:
         file.write(f'{comp["title"]} -> Price:{comp["price"]} -> Link{comp["link"]}\n')
@@ -36,4 +36,4 @@ def parse():
 
 # Виклик ф-ції parse:
 parse()
-input("")
+

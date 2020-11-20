@@ -11,14 +11,15 @@ training_inputs = np.array([[0, 0, 1],
                             [1, 1, 1],
                             [1, 0, 1],
                             [0, 1, 1]])
+
 training_outputs = np.array([[0, 1, 1, 0]]).T
 
 np.random.seed(1)
 
 synaptic_weights = 2 * np.random.random((3, 1)) - 1  # Вага синапсів не може бути меншою, ніж -1 і більшою, аніж +1
 print("Випадкові ваги:")
-print(synaptic_weights)
-print("")
+print(synaptic_weights,'\n')
+
 
 n = int(input("Введіть кількість ітерацій: "))
 outputs = np.zeros(0)
@@ -33,20 +34,19 @@ for i in range(n):
 
     synaptic_weights += adjustment
 
-print("")
-print("Ваги після навчання:")
+
+print("\nВаги після навчання:")
 print(synaptic_weights)
 
-print("")
-print("Результат після навчання:")
+
+print("\nРезультат після навчання:")
 print(outputs)
 
 # TEST
 new_inputs = np.array([1, 1, 0])  # нова ситуація
 outputs = sigmoid(np.dot(new_inputs, synaptic_weights))
 
-print("")
-print("Нова ситуація:")
+print("\nНова ситуація:")
 print(outputs)
 
 # input("")

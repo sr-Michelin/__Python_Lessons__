@@ -9,7 +9,7 @@ print('Help\nme ')
 
 # Додавання строк '+'
 # поліморфізм -- додавання строк print (vlad.name + " " + str(vlad.age))
-m='Міша'
+m = 'Міша'
 n = 22
 print('Я ' + m + ',і мені ' + str(n)+ ' рочки') # у випадку додавання чисел до строк використовуєм str(Num)
 
@@ -35,7 +35,7 @@ print(a)
 
 # Заокруглення
 a = 10.556
-print(round(a))
+print(round(a))        # в меншу сторону
 # або
 import math
 print(math.floor(a))   # в меншу сторону

@@ -1,10 +1,10 @@
 import telebot
-
 from telebot.types import Message
 
 print("Lord Michelin is working...")
 
-bot = telebot.TeleBot("934747315:AAGULA3JzsOeKUieypa1xKCuZbkUfUkrDHg")
+token = "934747315:AAGULA3JzsOeKUieypa1xKCuZbkUfUkrDHg"
+bot = telebot.TeleBot(token)
 
 '''@bot.message_handler(content_types=['sticker'])
 def sticker_handler(message: Message):
@@ -14,7 +14,7 @@ def sticker_handler(message: Message):
 
 @bot.message_handler(commands=['try'])
 def parser_tg(message: Message):
-    bot.send_message(message.chat.id, 'You wrote me /try', reply_markup = keyboard1)
+    bot.send_message(message.chat.id, 'You wrote me /try', reply_markup=keyboard1)
 
 
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True, True)
@@ -32,6 +32,7 @@ def command_handler(message: Message):
 @bot.message_handler(content_types=['text'])  # Виклик по тексту
 @bot.message_handler(content_types=['sticker'])
 @bot.edited_message_handler(content_types=['text'])  # Бот ревгує на редакію повідомлень у ТГ
+
 def echo_digits(message: Message):
     if 'Hi' in message.text:  # Бот реагує на текст 'Привіт'
         bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAIBcV8txcjB7q7Lknl-aQyOGBKE5C4ZAAI5AANdj6EVVJml4_dDVrwaBA')
