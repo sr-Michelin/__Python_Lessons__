@@ -17,7 +17,7 @@ print('\nЗапис матриці M5 через arange-reshape:\n{0}'.format(M5
 # Індексація матриць
 print('\n   Індексація матриць')
 print('Елемент матриці M5 з [1,1] = {0}'.format(M5[1, 1]))
-print('Перший стовбець матриці М5 = {0}'.format(M5[:, 0]))
+print('Перший стовбець матриці М5 = {0}'.format(M5[:,0]))
 print('Перший рядок матриці М5 = {0}'.format(M5[0, :]))
 print('Елементи матриці М5 із координатами [[1,0],[0,1]] = {0}'.format(M5[[1, 0], [0, 1]]))
 
@@ -59,7 +59,7 @@ a = np.array([1, 2, 3])
 b = np.array([1, 1, 1])
 c = np.array([2, 6, 8])
 M = np.array([a, b, c])
-print(np.linalg.matrix_rank(M) == M.shape[0])  # m.shape[0] - число векторів
+print(np.linalg.matrix_rank(M) == M.shape[0])  # M.shape[0] - число векторів
 
 # Системи лінійних рівняннь
 print('\n   Системи лінійних рівняннь')
