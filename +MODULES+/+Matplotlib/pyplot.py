@@ -16,5 +16,3 @@ while True:
 
     plt.plot(x, y)
     plt.show()
-
-
