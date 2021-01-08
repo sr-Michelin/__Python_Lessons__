@@ -13,11 +13,11 @@ class Currency:
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
                       '(KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36 OPR/69.0.3686.95'}
 
-    current_converted_priece = 27.72
+    old_converted_priece = 27.72
     diference = 0.9
 
     def __int__(self):
-        self.current_converted_priece = float(self.current_converted_priece)
+        self.old_converted_priece = float(self.old_converted_priece)
 
     def get_currency_price(self):
         full_page = requests.get(self.DORAR_UAH, headers=self.headers)
@@ -27,9 +27,9 @@ class Currency:
 
     def check_currency(self):
         currenc = float(self.get_currency_price().replace(",", "."))
-        if currenc >= self.current_converted_priece + self.diference:
+        if currenc >= self.old_converted_priece + self.diference:
             print("\nКурс сильно виріс. Пора щось міняти...")
-        elif currenc <= self.current_converted_priece - self.diference:
+        elif currenc <= self.old_converted_priece - self.diference:
             print("\nКурс сильно впав. Пора щось міняти...")
         print('Зараз 1 долар = ' + str(currenc) + ' грн.')
         time.sleep(1)
