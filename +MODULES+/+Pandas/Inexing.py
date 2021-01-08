@@ -29,7 +29,6 @@ print(Frame, '\n')
 Frame.to_csv('CSV_new.csv', header=True, index=None, sep=';')
 
 print('Тип обєкта')
-
 print(Frame.dtypes, '\n')  # Тип обєкта
 
 print('Повна інформація')

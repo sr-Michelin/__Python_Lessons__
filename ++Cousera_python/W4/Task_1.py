@@ -29,7 +29,7 @@ print('Theoretical standard deviation: ', distr.std())
 
 # Histogram of the sample
 plt.hist(distr, bins=30, density=True, label='Sample pdf')
-
+ 
 # Histogram of the theoretical sample density
 x = np.linspace(0, 30, N)
 y = chi2_rv.pdf(x)
@@ -49,7 +49,7 @@ plt.show()
 # of its sample average
 # ------------------------------ #
 
-sample_Vol = [5, 10, 50, 100]
+sample_Vol = [5, 10, 50, 1000]
 
 # the null array is created for a sample mean
 dist_sle = np.zeros((len(sample_Vol), N))
