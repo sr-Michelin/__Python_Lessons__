@@ -9,14 +9,12 @@ while True:
         except ValueError:
             print('Ви ввели не число!')
             continue
-        except EOFError:
-            break
 
         total += num
         i += 1
 
     else:
-        break
+        continue # (or) break
 
     if i:
         mean = total / i

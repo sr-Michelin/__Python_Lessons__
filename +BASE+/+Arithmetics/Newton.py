@@ -7,12 +7,13 @@ def newton(f, Df, t0, epsilon, max_iter):
         ftn = f(tn)
         if abs(ftn) < epsilon:
             print('Found solution after', n, 'iterations.')
+            print(ftn)
             return tn
         Dftn = Df(tn)
         if Dftn == 0:
             print('Zero derivative. No solution found.')
             return None
-        tn = tn - ftn / Dftn
+        tn -= ftn / Dftn
     print('Exceeded maximum iterations. No solution found.')
     return None
 

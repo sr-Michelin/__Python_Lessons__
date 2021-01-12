@@ -9,7 +9,7 @@ class Js_(default):
 
 Orange = Js_(10)
 Aple = Js_(12)
-Man = Js_(999)
+Man = Js_(10)
 
 def sum():
     print('Common volume of choosen juices - {}'.format(Orange.vol + Aple.vol + Man.vol))
