@@ -443,19 +443,21 @@ class Person():
         self.names = names
         self.age = age
 
-class Student (Person):
+
+class Student(Person):
     course = 1
 
-    def set(self, name, names, age, course):      # добавляєм course у __set
+    def set(self, name, names, age, course):  # добавляєм course у __set
         self.name = name
         self.names = names
         self.age = age
         self.course = course
 
-mike = Student ("Mike","Sh",21)
-#mike.set ("Mike",21)     # Пропускає цей складний рядок
-mike.set ("Міша","Шевченко",21,5)
-print ("Імя -",mike.name,", прізвище -", mike.names,", вік -",mike.age,", курс -", mike.course)
+
+mike = Student("Mike", "Sh", 22)
+# mike.set ("Mike",22)     # Пропускає цей складний рядок
+mike.set("Міша", "Шевченко", 22, 5)
+print("Імя -", mike.name, ", прізвище -", mike.names, ", вік -", mike.age, ", курс -", mike.course)
 "---------------------------------------Декоратори--------------------------------------------------------"
 # 'обгортки' для фунції - виконання коду після і до самої ф-ції
 # сповільнюють код

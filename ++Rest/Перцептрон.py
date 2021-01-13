@@ -8,11 +8,11 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
-training_inputs = np.array([[0, 0, 1],
+training_inputs = np.array([[0, 0, 1],  # вхідні дані
                             [1, 1, 1],
                             [1, 0, 1],
                             [0, 1, 1]])
-training_outputs = np.array([[0, 1, 1, 0]]).T
+training_outputs = np.array([[0, 1, 1, 0]]).T  # вихідні дані
 
 np.random.seed(1)
 
@@ -21,11 +21,11 @@ print("Випадкові ваги:")
 print(synaptic_weights)
 print("")
 n = int(input("Введіть кількість ітерацій: "))
-# Метод зворотнього розповсюдження
-for i in range(n):
-    input_layer = training_inputs
-    outputs = sigmoid(np.dot(input_layer, synaptic_weights))
 
+# Метод зворотнього розповсюдження (процес навчання нейронки)
+for i in range(n):
+    input_layer = training_inputs.copy()
+    outputs = sigmoid(np.dot(input_layer, synaptic_weights))
     err = training_outputs - outputs
     adjustment = np.dot(input_layer.T, err * (outputs * (1 - outputs)))
 
