@@ -22,5 +22,5 @@ while running:
 
     finally:
         f.close()
-        print('Блок finally')
+        print('Блок finally:')
         print('(Очищення: закриття файла)')
