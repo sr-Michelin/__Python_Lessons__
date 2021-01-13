@@ -1,11 +1,12 @@
 from numpy import fabs, sin, cos
 
-L = pow(10, -6)
+# L = pow(10, -1)
+L = 1
 
 
 def f(x_, x, i):
     while True:
-        x_ = sin(x) ** 2 + cos(x) ** 2 # used function
+        x_ = sin(x) ** 2 + cos(x) ** 2  # used function
         x += L
         i += 1
         if fabs(x_ - x) / x <= L:
@@ -16,4 +17,5 @@ def f(x_, x, i):
             break
 
 
-f(L, L, 0)
+if __name__ == '__main__':
+    f(L, L, 0)
