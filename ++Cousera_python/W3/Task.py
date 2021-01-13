@@ -11,8 +11,8 @@ def func1(x):
     return sin(x / 5.) * exp(x / 10.) + 5. * exp(-x / 2.)
 
 
-x_Arr1 = np.arange(1., 31.)
-y_Arr1 = np.array([func1(x) for x in x_Arr1])
+x_Arr1 = np.arange(1., 31.)  # задаємо проміжок по х
+y_Arr1 = np.array([func1(x) for x in x_Arr1])  # задаємо проміжок по у через func1(х)
 
 min_Fun1_val1 = minimize(func1, np.array(1))
 print('При х = {0}, f(x) = {1} за {2} ітерацій.'.format(round(float(min_Fun1_val1.x), 3), round(min_Fun1_val1.fun, 3),

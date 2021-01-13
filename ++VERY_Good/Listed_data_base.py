@@ -27,7 +27,6 @@ while run:
                        float(input('\tquality: '))))
     else:
         run = 0
-        print('Let\'s go to averrage\'s')
 
 
 def averrage():
@@ -36,6 +35,7 @@ def averrage():
     sum_quality = 0
 
     if len(Js_) > 0:
+        print('Let\'s go to averrage\'s')
         for n in range(0, len(Js_)):
             sum_vol += Js_[n].volume
             sum_price += Js_[n].price
@@ -45,6 +45,8 @@ def averrage():
               'volume - {1}L, priece - {2} UAN, quality - {3}%'.
               format(len(Js_), round(sum_vol / len(Js_), 2), round(sum_price / len(Js_), 2),
                      round(sum_quality / len(Js_), 2)))
+    else:
+        print('List of juices is empty..')
 
 
 if __name__ == '__main__':
