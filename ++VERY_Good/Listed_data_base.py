@@ -7,7 +7,8 @@ class units:
 
 class present_js(units):
     def __init__(self, origin, volume, price, quality):
-        units.__init__(self, volume, price, quality)
+        # units.__init__(self, volume, price, quality)
+        super().__init__(volume, price, quality)
         print('We have {0} juice with volume {1}L, priece {2} UAN ans quality {3}%'.format(origin, volume,
                                                                                            price, quality))
 
@@ -41,10 +42,10 @@ def averrage():
             sum_price += Js_[n].price
             sum_quality += Js_[n].quality
 
-        print('Averrages of {0} different juices: '
-              'volume - {1}L, priece - {2} UAN, quality - {3}%'.
+        print('_' * 80, '\nAverrages of {0} different juices: '
+                        'volume - {1}L, priece - {2} UAN, quality - {3}%'.
               format(len(Js_), round(sum_vol / len(Js_), 2), round(sum_price / len(Js_), 2),
-                     round(sum_quality / len(Js_), 2)))
+                     round(sum_quality / len(Js_), 2)), '\n{}'.format('_' * 80))
     else:
         print('List of juices is empty..')
 
