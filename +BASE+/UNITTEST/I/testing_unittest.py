@@ -1,7 +1,7 @@
 import unittest
 import sys
 
-sys.path.append('E:\\DOCK\\Python_M\\vеnv\\+LESSONS\\+BASE+\\UNITTEST')
+sys.path.append('E:\\DOCK\\Python_M\\vеnv\\+LESSONS\\+BASE+\\UNITTEST\\I')
 from tested_sample import get_fd_nm
 
 
