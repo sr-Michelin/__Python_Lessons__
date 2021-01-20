@@ -66,4 +66,6 @@ print("Hello World!")
 
 # Створення exe-шника
 'pyinstaller -F test.py'
+
+pyinstaller main.py --onefile --noconsole
 """
