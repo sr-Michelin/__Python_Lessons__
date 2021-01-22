@@ -37,6 +37,14 @@ class inh_3_all(inh_2, inh_1, inh_0):
         print('inh_3.__ linit__(self) - узагальнення дочірних підкласів')
 
 
-J = inh_3_all()
+class inh_all(inh_3_all):
+    'All'
+
+    def __init__(self):
+        super().__init__()
+        print('All')
+
+
+J = inh_all()
 print(inh_3_all.__doc__)
 print(inh_3_all.mro())
