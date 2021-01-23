@@ -38,6 +38,7 @@ enemy_x = []
 enemy_y = []
 enemy_ch_x = []
 enemy_ch_y = []
+diff = []
 
 # Швидкість ворога
 en_vc_x = 1.758
@@ -52,6 +53,7 @@ for i in range(enemy_N):
     enemy_y.append(random.randint(50, 150))
     enemy_ch_x.append(en_vc_x)
     enemy_ch_y.append(en_vc_y)
+    diff.append(i * 0)
 
 # дані missle
 missle_img = pygame.image.load('images/missile.png')
@@ -176,6 +178,7 @@ while True:
         player_y = 532
 
     # Рух ворога
+
     for i in range(enemy_N):
         # Умова кінця гри
         if enemy_y[i] > 516:
@@ -185,14 +188,16 @@ while True:
             break  # Зупинка створення і відображення ворогів - ігра програна
 
         enemy_x[i] += enemy_ch_x[i]
-
+        diff[i] = 50 - enemy_y[i]
+        _diff_ = abs(max(diff) / 10.)
+        print(_diff_)
         # Створюєм фізичні "рамки" для ворога, пересуваючи його вниз
         if enemy_x[i] <= 10:
-            enemy_ch_x[i] = en_vc_x
+            enemy_ch_x[i] = en_vc_x + _diff_
             enemy_y[i] += enemy_ch_y[i]
 
         elif enemy_x[i] >= 767:
-            enemy_ch_x[i] = - en_vc_x
+            enemy_ch_x[i] = - en_vc_x - _diff_
             enemy_y[i] += enemy_ch_y[i]
 
         # collision - попадання по мішені, виклик звуку, обліку попадань
