@@ -80,3 +80,4 @@ def enter():
 if __name__ == '__main__':
     caino()
     enter()
+    db.close()
