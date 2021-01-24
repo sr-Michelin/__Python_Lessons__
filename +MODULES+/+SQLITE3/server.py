@@ -52,7 +52,6 @@ def caino():
     # Вивід поточного балансу користувача
     sql.execute(f"SELECT cash FROM users WHERE login = '{user_login}'")
     balance = sql.fetchone()
-    print(balance)
 
     sql.execute(f"SELECT login FROM users WHERE login = '{user_login}'")
     # Якщо учасника лотереї немає у списку, викликається процес реєстрації
