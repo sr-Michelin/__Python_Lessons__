@@ -39,6 +39,7 @@ def reg():
 def caino():
     '''Функція привоєння певної грошової винагороди аипадковим учасникам лотереї'''
     user_login = input('Login: ')
+
     number = randint(1, 2)
 
     sql.execute(f"SELECT login FROM users WHERE login = '{user_login}'")
@@ -57,11 +58,13 @@ def caino():
         else:
             print('You are lost=)\n')
 
+
 # Вивід усіх учасників
 def enter():
     print('\nAll users: ')
-    for i in sql.execute("SELECT login,cash FROM users"):
-        print(i)
+    for i,j in sql.execute("SELECT login,cash FROM users"):
+        print(f"User '{i}' have {j} bucks")
+
 
 # Запуск цього всого:
 if __name__ == '__main__':
