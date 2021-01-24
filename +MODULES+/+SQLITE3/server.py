@@ -36,33 +36,44 @@ def reg():
             print(f"Login: {value[0]}, password: {value[1]}")
 
 
+def delete_db():
+    '''Видалення користувача (по потребі)'''
+    sql.execute(f"DELETE FROM users WHERE login = '{user_login}'")
+    db.commit()
+    print(f"User '{user_login}' deleted")
+
+
 def caino():
     '''Функція привоєння певної грошової винагороди аипадковим учасникам лотереї'''
+    global user_login
     user_login = input('Login: ')
-
     number = randint(1, 2)
 
-    sql.execute(f"SELECT login FROM users WHERE login = '{user_login}'")
+    # Вивід поточного балансу користувача
+    sql.execute(f"SELECT cash FROM users WHERE login = '{user_login}'")
+    balance = sql.fetchone()
+    print(balance)
 
+    sql.execute(f"SELECT login FROM users WHERE login = '{user_login}'")
     # Якщо учасника лотереї немає у списку, викликається процес реєстрації
     if sql.fetchone() is None:
         print('The user with this login is\'nt exist. You should registered\n')
         reg()
     else:
         if number == 1:
-            # Присвоєння 300 bucks:
-            sql.execute(f"UPDATE users SET cash = {300} WHERE login = '{user_login}'")
+            # Присвоєння 300 bucks до поточного балансу:
+            sql.execute(f"UPDATE users SET cash = {300 + balance[0]} WHERE login = '{user_login}'")
             db.commit()
             print(f"{user_login} get 300 bucks!")
-
         else:
-            print('You are lost=)\n')
+            print('You are lost=)')
+            delete_db()
 
 
 # Вивід усіх учасників
 def enter():
     print('\nAll users: ')
-    for i,j in sql.execute("SELECT login,cash FROM users"):
+    for i, j in sql.execute("SELECT login,cash FROM users"):
         print(f"User '{i}' have {j} bucks")
 
 
