@@ -16,13 +16,15 @@ db.commit()
 
 
 def reg():
-    '''Функція реєстрації. Викликається для нових користувачів'''
+    """Функція реєстрації. Викликається для нових користувачів"""
+
     user_login = input('Login: ')
     user_password = input('Password: ')
 
     sql.execute(f"SELECT login FROM users WHERE login = '{user_login}'")
 
     # Запис отриманих реєстраційних даних у таблицю
+
     if sql.fetchone() is None:
         # sql.execute(f"INSERT INTO users VALUES ('{user_login}','{user_password}','{0}')")
         sql.execute(f"INSERT INTO users VALUES (?,?,?)", (user_login, user_password, 0))

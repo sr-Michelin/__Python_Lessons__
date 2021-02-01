@@ -156,9 +156,8 @@ print('\nXi^2')
 chi2_rv = sts.chi2(20)
 print('Певна кількість елементів:', chi2_rv.rvs(5))
 
-
 x = np.linspace(0, 30, 100)
-for k in [0.001,1,2,5,10,15,20,50]:
+for k in [0.001, 1, 2, 5, 10, 15, 20, 50]:
     rv = sts.chi2(k)
     y = rv.cdf(x)
     # plt.plot(x, y, label='$k=%s$' % k)

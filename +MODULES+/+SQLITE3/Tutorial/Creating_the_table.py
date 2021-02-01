@@ -17,7 +17,7 @@ print('Table e_m created\n')
 
 
 def insert_record(ID, NAME, BRANCH, COURSE, SSH):
-    '''Внесення даних'''
+    """Внесення даних"""
     # dbase.execute(''' INSERT INTO e_m (ID,NAME,BRANCH,COURSE,SSH) VALUES (4,'Sasha','physics', 5, 0) ''')
     dbase.execute(''' INSERT INTO e_m (ID,NAME,BRANCH,COURSE,SSH) VALUES (?,?,?,?,?)''',
                   (ID, NAME, BRANCH, COURSE, SSH))
@@ -30,7 +30,7 @@ def insert_record(ID, NAME, BRANCH, COURSE, SSH):
 # insert_record(5,'Ivan','army', 0, 0)
 
 def read_data():
-    '''Зчитування даних'''
+    """Зчитування даних"""
     # data = dbase.execute(''' SELECT * FROM  e_m''')
     data = cursor.execute(''' SELECT * FROM  e_m''')  # більш швидший виклик даних
     for record in data:
@@ -38,7 +38,7 @@ def read_data():
 
 
 def check_data():
-    '''Вибіркове зчитування даних'''
+    """Вибіркове зчитування даних"""
     data = cursor.execute(''' SELECT * FROM e_m WHERE NAME = "Yara" ''')
     print('_' * 56)
     print('Checked collum:')
@@ -47,14 +47,15 @@ def check_data():
 
 
 def check_fetch():
-    '''Вибіркове зчитування даних з умовою присутності даних через логічні оператори
-    (на мою думку, більш надійіший спосіб)'''
+    """Вибіркове зчитування даних з умовою присутності даних через логічні оператори
+    (на мою думку, більш надійіший спосіб)"""
 
     data = cursor.execute(''' SELECT * FROM  e_m WHERE NAME != "Ivan" ''')
     x = data.fetchall()
     print('_' * 56)
     print('Check_fetch:')
-    if x == []:
+    # if x == []:
+    if not x:
         print('Doesnt exist...')
     else:
         for record in x:
@@ -62,7 +63,7 @@ def check_fetch():
 
 
 def update_rec():
-    '''Перезапис даних'''
+    """Перезапис даних"""
     dbase.execute(''' UPDATE e_m SET SSH = 1661 WHERE ID = 4 ''')
     dbase.commit()
     print('_' * 56)
@@ -70,7 +71,7 @@ def update_rec():
 
 
 def dell_rec():
-    '''Видалення даних'''
+    """Видалення даних"""
     dbase.execute(''' DELETE FROM e_m WHERE ID = 0 ''')
     dbase.commit()
     print('Deleted ID = 0')

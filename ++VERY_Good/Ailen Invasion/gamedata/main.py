@@ -73,35 +73,35 @@ over_font = pygame.font.Font('freesansbold.ttf', 64)
 
 
 def Show_score(x, y):
-    '''Описує вивід на екран ігрового рахунку'''
+    """Описує вивід на екран ігрового рахунку"""
     score = font.render('Kills: ' + str(score_val), True, (225, 225, 225))
     screen.blit(score, (x, y))
 
 
 def game_over_text():
-    '''Описує вивід на екран тексту "Ігра завершена" '''
+    """Описує вивід на екран тексту "Ігра завершена" """
     over_text = font.render('GAME OVER', True, (225, 225, 225))
     screen.blit(over_text, (333, 290))
 
 
 def Show_FPS():
-    '''Описує вивід на екран FPS'''
+    """Описує вивід на екран FPS"""
     fpc = font.render('FPS: ' + str(int(clock.get_fps())), True, (225, 225, 225))
     screen.blit(fpc, (685, 10))
 
 
 def player(x, y):
-    '''Описує вивід на екран зображення гравця'''
+    """Описує вивід на екран зображення гравця"""
     screen.blit(player_img, (x, y))
 
 
 def enemy(x, y, i):
-    '''Описує вивід на екран зображення ворога'''
+    """Описує вивід на екран зображення ворога"""
     screen.blit(enemy_img[i], (x, y))
 
 
 def fire_missle(x, y):
-    '''Описує вивід на екран зображення снаряда'''
+    """Описує вивід на екран зображення снаряда"""
     global missle_state
     missle_state = 'fire'
     screen.blit(missle_img, (x + 24, y + 10))
@@ -109,7 +109,7 @@ def fire_missle(x, y):
 
 # Відстань від ворогів до снаяряда
 def Collision(enemy_x, enemy_y, missle_x, missle_y):
-    '''Відповідає за визначення відстані від снаряда до ворога - індикатор попадання'''
+    """Відповідає за визначення відстані від снаряда до ворога - індикатор попадання"""
     distance = sqrt(pow((enemy_x - 10) - missle_x, 2) + pow(enemy_y - missle_y, 2))
     if distance <= 20:
         return True

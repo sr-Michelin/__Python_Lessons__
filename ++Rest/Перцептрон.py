@@ -1,7 +1,7 @@
+import numpy as np
+
 print("# Перцептрон")
 print("")
-
-import numpy as np
 
 
 def sigmoid(x):

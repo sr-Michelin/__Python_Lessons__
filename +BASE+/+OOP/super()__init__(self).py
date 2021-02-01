@@ -29,8 +29,8 @@ class inh_2(main):
 
 
 class inh_3_all(inh_2, inh_1, inh_0):
-    '''\nDiamond structure (ромб, який починається із головного класу, продовжується дочірними,
-і закінчується узагальненням дочірних)'''
+    """\nDiamond structure (ромб, який починається із головного класу, продовжується дочірними,
+і закінчується узагальненням дочірних)"""
 
     def __init__(self):
         super().__init__()
@@ -38,7 +38,7 @@ class inh_3_all(inh_2, inh_1, inh_0):
 
 
 class inh_all(inh_3_all):
-    'All'
+    """All"""
 
     def __init__(self):
         super().__init__()
