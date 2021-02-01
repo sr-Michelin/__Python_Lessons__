@@ -37,8 +37,8 @@ print('{0:->25}'.format(s))  # заповнювач зліва
 print('{0:.10}'.format(s))  # максимальна довжина поля виоду
 
 maxwidth = 12
-print('{0}'.format(s[:maxwidth]))  # витяг зрізу
-print('{0:.{1}}'.format(s, maxwidth))  # вкладене замісне поле
+print('{0}'.format(s[:maxwidth]))  # витяг зрізу ==>
+print('{0:.{1}}'.format(s, maxwidth))  # ==>  вкладене замісне поле
 
 # добавлення нулів
 print('{0:0=12}'.format(123456789))  # нуль - заповнювач
