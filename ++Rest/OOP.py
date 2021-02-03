@@ -5,7 +5,8 @@ class default():
 
 class Js_(default):
     def __init__(self, vol):
-        default.__init__(self, vol)
+        # default.__init__(self, vol)
+        super().__init__(vol)
         print('Volume of chosen juice: ', vol)
 
 
@@ -15,7 +16,7 @@ Man = Js_(10)
 
 
 def sum():
-    print('Common volume of choosen juices - {}'.format(Orange.vol + Apple.vol + Man.vol))
+    print('Common volume of chosen juices - {}'.format(Orange.vol + Apple.vol + Man.vol))
 
 
 if __name__ == '__main__':
