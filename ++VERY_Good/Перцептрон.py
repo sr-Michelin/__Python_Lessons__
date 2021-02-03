@@ -8,6 +8,7 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
+outputs = 0
 training_inputs = np.array([[0, 0, 1],  # вхідні дані
                             [1, 1, 1],
                             [1, 0, 1],

@@ -1,7 +1,6 @@
 # Угадайка на циклах
 import time
 a = time.localtime().tm_year - 1998
-
 running = True
 
 while running:

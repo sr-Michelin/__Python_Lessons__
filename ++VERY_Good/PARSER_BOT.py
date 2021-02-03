@@ -36,4 +36,3 @@ def parse():
 
 # Виклик ф-ції parse:
 parse()
-
