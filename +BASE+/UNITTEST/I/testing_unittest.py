@@ -6,7 +6,7 @@ from tested_sample import get_fd_nm
 
 
 class testing(unittest.TestCase):
-    '''Testing the get_fd_nm and outhers modules (in the future)'''
+    """Testing the get_fd_nm and others modules (in the future)"""
 
     def test_first_name(self):
         formatted_name = get_fd_nm('mike')

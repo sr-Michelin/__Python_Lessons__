@@ -39,14 +39,14 @@ def reg():
 
 
 def delete_db():
-    '''Видалення користувача (по потребі)'''
+    """Видалення користувача (по потребі)"""
     sql.execute(f"DELETE FROM users WHERE login = '{user_login}'")
     db.commit()
     print(f"User '{user_login}' deleted")
 
 
 def caino():
-    '''Функція привоєння певної грошової винагороди випадковим учасникам лотереї'''
+    """Функція привоєння певної грошової винагороди випадковим учасникам лотереї"""
     global user_login
     user_login = input('Login: ')
     number = randint(1, 2)

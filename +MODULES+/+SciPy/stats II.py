@@ -43,7 +43,7 @@ plt.xlabel('$x$')
 plt.show()
 
 # Гістограма вибірки
-plt.hist(sample, bins=40)
+plt.hist(sample, bins=40, color='red', density=False)
 
 plt.title("Гістограма вибірки неперервного розподілу")
 

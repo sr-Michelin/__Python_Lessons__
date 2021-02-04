@@ -14,7 +14,7 @@ print(Fore.RED, 'Вивід т-ці\n', frame, '\n')  # Вивід т-ці
 frame_csv = pd.read_csv('CSV1.csv', header=0, sep=';')  # Відкриття csv-ф
 print('Відкриття csv-ф\n', frame_csv, '\n')
 print(frame_csv.columns)
-print('Type:\n', frame_csv.shape, '\n')
+print('Shape:\n', frame_csv.shape, '\n')
 
 fcsv_new_line = {'Name': 'Ivan', 'Sname': 'Golubosh'}  # запис нового рядка для т-ці
 frame_csv = frame_csv.append(fcsv_new_line, ignore_index=1)  # доповнення т-ці цим рядком

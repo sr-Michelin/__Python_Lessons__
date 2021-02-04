@@ -5,4 +5,5 @@ def profile_(volume, origin, **properties):
     print(profile)
     return profile
 
-js_1 = profile_(10,'Apple',priece = '23 UAN',state = 'pure')
+
+js_1 = profile_(10, 'Apple', priece='23 UAN', state='pure')

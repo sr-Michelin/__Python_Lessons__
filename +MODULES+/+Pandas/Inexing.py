@@ -9,16 +9,16 @@ print(Frame, '\n')
 
 print('Новий рядок')
 Frame = Frame.append({'Name': 'Max', 'Sname': 'Varynyca'}, ignore_index=True)  # Новий рядок
-Frame = Frame.append({'Name': 'Yaryna', 'Sname': 'Ostapchuk'},ignore_index=True)
+Frame = Frame.append({'Name': 'Yaryna', 'Sname': 'Ostapchuk'}, ignore_index=True)
 print(Frame, '\n')
 
 print('Новий стовпець')
-Frame['Birth'] = ['04.11.1998'] + ['01.01.1998'] * 3 + ['14.05.1999']  # Новий стовпець
+Frame['Birth'] = ['04.11.1998'] + ['01.01.1999'] * 3 + ['14.05.1999']  # Новий стовпець
 Frame['Sex'] = [None] * 4 + ['Female']
 print(Frame, '\n')
 
 '---------------new------------------'
-print('Заповнення пустих значень {None} новими {Male}')
+print('\tЗаповнення пустих значень {None} новими {Male}')
 Frame.fillna('Male', inplace=True)  # Заповнення пустих значень {None} новими {'Male'}
 print(Frame, '\n')
 
@@ -62,4 +62,3 @@ print('Або')
 print(Frame[(Frame.Birth < datetime.datetime(1998, 4, 11)) | (Frame.Sex == 'Female')],
       '\n')  # 'Або'
 input()
-

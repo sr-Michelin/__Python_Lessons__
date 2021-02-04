@@ -86,12 +86,12 @@ for N in [20, 30, 40]:
     for p in [0.2, 0.7]:
         rv = sts.binom(N, p)
         y = rv.cdf(x)
-        # plt.step(x, y, label="$N=%s, p=%s$" % (N, p))
+        plt.step(x, y, label="$N=%s, p=%s$" % (N, p))
 plt.legend()
 plt.title("CDF (binomial)")
 plt.ylabel('$F(X)$')
 plt.xlabel('$x$')
-# plt.show()
+plt.show()
 
 # Експеримент ф-ції густини розподілу біномного розподілу
 x = np.linspace(0, 45, 46)
@@ -100,12 +100,12 @@ for N in [20, 30]:
     for p in [0.2, 0.8]:
         rv = sts.binom(N, p)
         y = rv.pmf(x)
-        # plt.plot(x, y, next(symb), label="$N=%s, p=%s$" % (N, p))
+        plt.plot(x, y, next(symb), label="$N=%s, p=%s$" % (N, p))
 plt.legend()
 plt.title("PMF (binomial)")
 plt.ylabel('$P(X=x)$')
 plt.xlabel('$x$')
-# plt.show()
+plt.show()
 
 # ---------------------------------------
 # Розподіл Пуасона
@@ -118,12 +118,12 @@ x = np.linspace(0, 30, 31)
 for l in [1, 5, 10, 15]:
     rv = sts.poisson(l)
     cdf = rv.cdf(x)
-    # plt.step(x, cdf, label="$\lambda=%s$" % l)
+    plt.step(x, cdf, label="$\lambda=%s$" % l)
 plt.legend()
 plt.title("CDF (poisson)")
 plt.ylabel('$F(x)$')
 plt.xlabel('$x$')
-# plt.show()
+plt.show()
 
 # Експеримент  ф-ції густини розподілу Пуасона
 
@@ -133,13 +133,12 @@ symbols = iter(['o', 's', '^', '+'])
 for l in [1, 5, 10, 15]:
     rv = sts.poisson(l)
     pmf = rv.pmf(x)
-    # plt.plot(x, pmf, next(symbols), label="$\lambda=%s$" % l)
+    plt.plot(x, pmf, next(symbols), label="$\lambda=%s$" % l)
 plt.legend()
 plt.title("PMF (poisson)")
 plt.ylabel('$P(X=x)$')
 plt.xlabel('$x$')
-# plt.show()
-
+plt.show()
 
 # ---------------------------------------
 # Дискретний розподіл
@@ -160,7 +159,7 @@ x = np.linspace(0, 30, 100)
 for k in [0.001, 1, 2, 5, 10, 15, 20, 50]:
     rv = sts.chi2(k)
     y = rv.cdf(x)
-    # plt.plot(x, y, label='$k=%s$' % k)
+    plt.plot(x, y, label='$k=%s$' % k)
 plt.legend()
 plt.title("CDF ($\chi^2_k$)")
-# plt.show()
+plt.show()

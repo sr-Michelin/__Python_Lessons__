@@ -1,11 +1,15 @@
 import numpy as np
 from numpy.linalg import norm
 from scipy.spatial.distance import cdist
+from colorama import init, Fore
 
+init()
+
+print('{0}Запис векторів:\n'.format(Fore.LIGHTCYAN_EX))
 a = np.array([1, 0, 1], dtype=int)
 b = np.array([True, False, False], dtype=int)
 c = np.arange(0, 10, 1, dtype=int)
-L = np.linspace(0, 1, 5, endpoint=1)  # 5 точок у відрізку [0,1]
+L = np.linspace(0, 1, 5, endpoint=True)  # 5 точок у відрізку [0,1]
 
 print(a, type(a))
 print(b, type(b))

@@ -1,8 +1,8 @@
 from random import choice
 
 
-class Random_walk():
-    '''Генерація випадкового блукання - броунівського руху '''
+class Random_walk:
+    """Генерація випадкового блукання - броунівського руху """
 
     def __init__(self, num_points=50000):
         self.num_points = num_points
@@ -12,7 +12,7 @@ class Random_walk():
         self.y_val = [0]
 
     def fill_walk(self):
-        '''Обчислення усіх точок блукааня'''
+        """Обчислення усіх точок блукааня"""
 
         # Генерація кроків до досягнення потрібної довжини
         while len(self.x_val) < self.num_points:

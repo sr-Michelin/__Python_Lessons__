@@ -4,7 +4,7 @@ from colorama import init, Fore
 
 init()
 
-print(Fore.GREEN, 'Rosenbrok func')
+print(Fore.YELLOW, 'Rosenbrok func')
 W = np.array([2, 2])
 
 

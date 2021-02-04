@@ -4,7 +4,7 @@ face_cascade_db = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_fro
 
 cap = cv2.VideoCapture('I.mp4')
 while True:
-    succes, image = cap.read()
+    success, image = cap.read()
     image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     faces = face_cascade_db.detectMultiScale(image_gray, 1.1, 19)
 

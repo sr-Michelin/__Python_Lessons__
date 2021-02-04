@@ -11,8 +11,9 @@ print('mylist   - ', mylist)
 print('\nКопіювання за допомогою простої вирізки... \
 \nнаступний обєкт не посилається на попередний')
 
-mylist = shoplist[:]
-# mylist = shoplist.copy()
+# mylist = shoplist[:]
+mylist = shoplist.copy()
+
 del shoplist[0]
 print('shoplist - ', shoplist)
 print('mylist   - ', mylist)
