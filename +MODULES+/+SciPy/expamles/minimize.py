@@ -4,10 +4,10 @@ import numpy as np
 
 
 def f(x):
-    return x ** 2
+    return x ** 3
 
 
-x_arr = np.arange(-10, 10, 5)
+x_arr = np.arange(-10, 10, .5)
 y_arr = np.array([f(x) for x in x_arr])
 
 o_m = minimize(f, np.array(1), method='BFGS')
