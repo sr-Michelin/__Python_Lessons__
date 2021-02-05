@@ -22,8 +22,13 @@ print(D5)
 D6 = {A: A ** 2 for A in range(11)}  # range -у проміжку, запис квадратів чисел проміжку до 10
 print('Квадрати чисел: ', D6, end="")
 
-# Приклад запису бази даних студента:
+'''--------------------Zip()--------------------------------------------'''
+d1 = dict(zip(('name', 'course', 'age', 'sex', 'shh'),
+              (['Mike Shevchenko', 'Yara Ostapchuk', 'Kolya Gusev'], [5] * 3, [22, 21, 21], ['male', 'female', 'male'],
+               1600)))
 
+
+# Приклад запису бази даних студента:
 student = {'name': {'last name': 'Шевченко', 'first name': 'Михайло', 'middle name': 'Сергійович'},
            'adress': ['м.Львів', 'вул.Пачічна', None, 'к.407'],
            'tell': {'t_first': None, 't_second': None, 't_third': None}}
