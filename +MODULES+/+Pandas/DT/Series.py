@@ -2,7 +2,7 @@ import pandas as pd
 
 """Series --- одномірна таблиця з одним пронумерованим стовпцем"""
 sr_0 = pd.Series(data=None, index=None, dtype='object', name=None, copy=None, fastpath=None)
-# data - масив, скаляр або dict  ---  структура тпблиці
+# data - масив, скаляр або dict  ---  структура таблиці
 # index - одновим. масив, список міток для доступу до е-тів Series (довжина сп = довжина data)
 # dtype  - тип даних
 # copy - при True створюєится копія масиву даних
