@@ -16,4 +16,4 @@ res = job.result()  # Grab results from the job
 counts = res.get_counts(circ)
 print('\nTotal count for 00 and 11 are:', counts)  # Returns counts
 
-print(circ.draw())  # Draw the circuit
+circ.draw(output='mpl') # Draw the circuit
