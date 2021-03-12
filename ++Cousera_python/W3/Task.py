@@ -74,7 +74,4 @@ with open('Task_3.txt', 'w') as val_answer3:
     for item in min_val_answer2:
         val_answer3.write(str(item) + ' ')
 
-plt.plot(x_Arr1, y_Arr1, x_Arr2, y_Arr2)
-plt.grid(True)
-plt.axis([0, 30, -15, 5])
-plt.show()
+

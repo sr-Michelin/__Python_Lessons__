@@ -23,12 +23,12 @@ for i in range(N):
     arrA1 = np.append(arrA1, np.array([arrA1line]), axis=0)
 
 arrB1 = np.array([func(coord) for coord in arr_cord1])
-print(arr_cord1)
-print(arrA1)
-print(arrB1)
+print(f'arr_cord1: {arr_cord1}')
+print(f'arrA1: {arrA1}')
+print(f'arrB1: {arrB1}')
 
 arrX1 = linalg.solve(arrA1, arrB1)
-print(arrX1)
+print(f'arrX1: {arrX1}')
 
 
 def func1(x):
@@ -105,3 +105,41 @@ plt.show()
 with open('Task_2.txt', 'w') as f_answer:
     for i in arrX3:
         f_answer.write(str(i) + ' ')
+
+# СЛАУ восьмої степені в т. 1,3,5,7,9,11,13,15
+print('\n# СЛАУ восьмої степені в т. 1,3,5,7,9,11,13,15')
+
+arr_cord8 = np.array([1, 3, 5, 7, 9, 11, 13, 15])
+N = 8
+arrA8 = np.empty((0, N))
+for i in range(N):
+    arrA8line = list()
+    for j in range(N):
+        arrA8line.append(arr_cord8[i] ** j)
+    arrA8 = np.append(arrA8, np.array([arrA8line]), axis=0)
+
+arrB8 = np.array([func(coord) for coord in arr_cord8])
+
+print(f'arr_cord8: {arr_cord8}')
+print(f'arrA8: {arrA8}')
+print(f'arrB8: {arrB8}')
+
+arrX8 = linalg.solve(arrA8, arrB8)
+print(f'arrX8: {arrX8}')
+
+
+def func8(x):
+    return arrX8[0] + arrX8[1] * x + arrX8[2] * (x ** 2) + arrX8[3] * (x ** 3) + arrX8[4] * (x ** 4) + arrX8[5] * (
+            x ** 5) + arrX8[6] * (x ** 6) + arrX8[7] * (x ** 7)
+
+
+arr_func8 = np.array([func8(coord) for coord in arr_cord])
+
+plt.plot(arr_cord, arr_func8, label='approximation')
+plt.scatter(arr_cord, arr_func, alpha=0.5, label='raw function')
+
+plt.title('Approximation')
+plt.grid()
+plt.legend()
+plt.savefig('approximation x8')
+plt.show()

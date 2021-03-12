@@ -64,7 +64,7 @@ two_clses_val = [[-1, 0], [-1, 0]]
 dist_I_sent_copy.remove(min(dist_I_sent_copy))  # Видалям 0 (перше знвчення)
 
 for i in range(2):
-    two_clses_val[i][w1] = min(dist_I_sent_copy)  # Знаходимо два найменших значень косинусної відстанні
+    two_clses_val[i][1] = min(dist_I_sent_copy)  # Знаходимо два найменших значень косинусної відстанні
     print('i-->', two_clses_val[i][1])
     for j in range(len(dist_I_sent)):
         if two_clses_val[i][1] == dist_I_sent[j]:  # Вказуєм на номер мінімальних значень
