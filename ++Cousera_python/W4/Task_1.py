@@ -5,7 +5,7 @@ import scipy.stats as sts
 from math import sqrt
 
 # ------------------------------ #
-# Volume 1000 sample generation   #
+# Volume 1000 sample generation  #
 # ------------------------------ #
 k = 10
 N = 1000
@@ -40,11 +40,12 @@ plt.axis([0, 30, 0, 0.125])
 plt.title('Chi2 probability distribution function')
 plt.xlabel('x')
 plt.ylabel('pdf')
+plt.savefig('Chi2 probability distribution function')
 plt.show()
 
 # ------------------------------ #
 # Generation of 1000 samples with
-# volume n = (5,10,50), construction
+# volume n = (5,10,50,1000), construction
 # of the histogram of distribution
 # of its sample average
 # ------------------------------ #
@@ -61,7 +62,7 @@ for i in range(len(sample_Vol)):
         dist_sle_t_m = dist_sle_t.mean()
         dist_sle[i, j] = dist_sle_t_m
 
-print('\nGeneration of 1000 samples with volume n = (5,10,50)...')
+print('\nGeneration of 1000 samples with volume n = (5,10,50,1000)...')
 print(dist_sle)
 
 # histograms of the sample
@@ -73,6 +74,7 @@ for i in range(len(sample_Vol)):
     plt.legend()
     plt.xlabel('x')
     plt.ylabel('pdf')
+plt.savefig('Chi2 probability distribution function [n = (5,10,50,1000)]')
 plt.show()
 
 # ------------------------------ #
@@ -119,6 +121,7 @@ for i in range(len(sample_Vol)):
     y = norm_rv.pdf(x)
     plt.plot(x, y)
 
+plt.savefig('Chi2 probability distribution function [central limit theorem]')
 plt.show()
 
 
