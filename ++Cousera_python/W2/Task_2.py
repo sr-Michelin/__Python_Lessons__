@@ -120,12 +120,12 @@ for i in range(N):
 
 arrB8 = np.array([func(coord) for coord in arr_cord8])
 
-print(f'arr_cord8: {arr_cord8}')
-print(f'arrA8: {arrA8}')
-print(f'arrB8: {arrB8}')
+print(f'\narr_cord8: {arr_cord8}')
+print(f'\narrA8: {arrA8}')
+print(f'\narrB8: {arrB8}')
 
 arrX8 = linalg.solve(arrA8, arrB8)
-print(f'arrX8: {arrX8}')
+print(f'\narrX8: {arrX8}')
 
 
 def func8(x):
@@ -138,8 +138,8 @@ arr_func8 = np.array([func8(coord) for coord in arr_cord])
 plt.plot(arr_cord, arr_func8, label='approximation')
 plt.scatter(arr_cord, arr_func, alpha=0.5, label='raw function')
 
-plt.title('Approximation')
+plt.title('Polynomial approximation [n^8]')
 plt.grid()
 plt.legend()
-plt.savefig('approximation x8')
+plt.savefig('Polynomial approximation [n^8]')
 plt.show()
