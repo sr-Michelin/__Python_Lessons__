@@ -70,8 +70,14 @@ print('При х = {0}, f(x) = {1} за {2} ітерацій -- Evolution [(1, 3
 min_val_answer2[1] = round(min_Fun2_val2.fun, 2)
 print(min_val_answer2)
 
+plt.title('Comparison of different types in matplotlib')
+plt.plot(x_Arr1, y_Arr1, label='float (original function)')
+plt.plot(x_Arr2, y_Arr2, label='int')
+plt.grid()
+plt.legend()
+plt.savefig('Comparison of different types in matplotlib')
+plt.show()
+
 with open('Task_3.txt', 'w') as val_answer3:
     for item in min_val_answer2:
         val_answer3.write(str(item) + ' ')
-
-
