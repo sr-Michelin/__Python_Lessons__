@@ -1,4 +1,4 @@
-from math import *
+ from math import *
 
 
 def newton(f, Df, t0, epsilon, max_iter):

@@ -1,8 +1,8 @@
 import math
 
-fzf_41 = ('Vasyl_Polcanov', 'Krystyna_Kovach', 'Mike_Tonne', 'Ilya_Kosyak-Shvaga',
-          'Lybomyr_Probytyj-Sosok', 'Romchyk_Bukhach-Kyrylyk', 'Alonya_Anime-Nicolayeva')
-fzf_42 = ('Mike_Shevchenko', 'Denys_Ohrymovich', 'Yaryna_Ostapchuk')
+fzf_41 = ('Vasyl_Polcanov', 'Krystyna_Kovach', 'Mike_Tonne', 'Ilya_Shvaga',
+          'Lybomyr_Probytyj-Sosok', 'Romchyk_Bukhach-Kyrylyk', 'Alonya_Nicolayeva')
+fzf_42 = ('Mike_Shevchenko', 'Denys_Ohrymovich', 'Yara_Ostapchuk')
 
 print('{0} students from old fzf_41: '.format(len(fzf_41)), end='')
 for i in fzf_41:

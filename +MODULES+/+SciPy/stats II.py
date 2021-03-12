@@ -40,6 +40,7 @@ plt.title("Неперервний розподіл")
 plt.legend(loc='upper left')
 plt.ylabel('$f(x)$')
 plt.xlabel('$x$')
+plt.savefig('Неперервний розподіл')
 plt.show()
 
 # Гістограма вибірки
@@ -49,6 +50,7 @@ plt.title("Гістограма вибірки неперервного розп
 
 plt.ylabel('fraction of samples')
 plt.xlabel('$x$')
+plt.savefig('Гістограма вибірки неперервного розподілу')
 plt.show()
 
 # Ядерне зглажування
@@ -65,4 +67,5 @@ plt.title("Ядерне зглажування")
 
 plt.ylabel('$f(x)$')
 plt.xlabel('$x$')
+plt.savefig('Ядерне зглажування')
 plt.show()

@@ -1,3 +1,4 @@
+# тут ми проходимося по словнику *properties
 def profile_(volume, origin, **properties):
     profile = {'volume': volume, 'origin': origin}
     for key, value in properties.items():

@@ -1,6 +1,6 @@
 # тут ми проходимося по кортежу *contain
 def make_juice(volume, *contain):
-    print('We have a {0}L of juice, which contain:'.format(volume), end=' ')
+    print(f'We have a {volume}L of juice, which contain:', end=' ')
     for i in contain:
         print(i, end=' ')
 

@@ -26,10 +26,10 @@ class Student(Person):
 
 s1 = Student('Mike Shevchenko', 22, 5, 'Yes')
 s2 = Student('Roman Kyrylyk', 21, 5, 'No')
-s3 = Student('Kolya Gusev', 21, 5, 'No')
-s4 = Student('Denys Ohrymovich', 21, 5, 'Yes')
+s3 = Student('Kolya Gusev', 21, 5, 'Yes!!')
+s4 = Student('Denys Ohrymovich', 21, 5, 'No')
 s5 = Student('Jorik', 24, 5, 'No!')
-s6 = Student('Yaryna Ostapchuk', 21, 5, 'No:(')
+s6 = Student('Yaryna Ostapchuk', 21, 5, 'Yes!!1!')
 
 print()
 

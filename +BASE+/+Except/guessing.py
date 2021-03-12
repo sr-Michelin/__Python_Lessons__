@@ -20,7 +20,7 @@ while running:
     except ValueError:
         print('Ви ввели не число! \nTry again!')
 
-    finally:
+    finally:  # in any cases
         f.close()
         print('Блок finally:')
         print('(Очищення: закриття файла)')
