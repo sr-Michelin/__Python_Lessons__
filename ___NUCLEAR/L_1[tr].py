@@ -28,10 +28,10 @@ z2 = 1
 E0 = pow(10, -16)
 U = 1.6022 * pow(10, -13)
 
+# z1 = float(input('Enter the proton number of element I: '))
+# z2 = float(input('Enter the proton number of element II: '))
+# E0 = float(input('Enter energy E0 [KeV]: ')) * pow(10, -16)
 
-z1 = float(input('Enter the proton number of element I: '))
-z2 = float(input('Enter the proton number of element II: '))
-E0 = float(input('Enter energy E0 [KeV]: ')) * pow(10, -16)
 
 def f(r):
     """\nTest function (U = 1.6 * pow(10, -13)):"""
@@ -55,7 +55,6 @@ I = h * S
 print(f.__doc__, f'\nThe result of integration: {I}')
 P = exp((-2 / h_) * I)
 print(f'Probability: {P}')
-
 
 S = 0.5 * (f_(a) + f_(b))
 for i in range(1, n):

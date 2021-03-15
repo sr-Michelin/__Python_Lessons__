@@ -4,7 +4,7 @@ x = symbols('x')
 
 
 def f(x):
-    return sin(x) ** 2 + cos(x) ** 2
+    return 3 * sin(x) + cos(x)
 
 
 def Df(x):
