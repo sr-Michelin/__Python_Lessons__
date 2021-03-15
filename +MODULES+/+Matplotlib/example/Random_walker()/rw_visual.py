@@ -5,6 +5,7 @@ sys.path.append('E:\\DOCK\\Python_M\\vеnv\\+LESSONS\\+MODULES+\\+Matplotlib\\ex
 from random_walk import Random_walk
 
 # Безкінечна побудова б/р
+i = 0
 while True:
     rw = Random_walk()
     rw.fill_walk()
@@ -18,6 +19,7 @@ while True:
     # Виділення першої і останьої точки:
     plt.scatter(0, 0, c='green', edgecolors='none', s=40)
     plt.scatter(rw.x_val[-1], rw.y_val[-1], c='red', edgecolors='none', s=40)
+    plt.savefig('rw' + str(i))
     plt.show()
 
     # Видалення осей (для красоти):
@@ -29,3 +31,5 @@ while True:
     if running != 'y':
         print('End of the program..')
         break
+    else:
+        i += 1

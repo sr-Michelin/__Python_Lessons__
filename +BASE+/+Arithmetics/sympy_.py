@@ -1,4 +1,4 @@
-from sympy import symbols, integrate, diff, sin, cos
+from sympy import symbols, integrate, diff, cos, sin
 
 x = symbols('x')
 
