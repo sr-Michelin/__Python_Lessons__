@@ -8,13 +8,6 @@ data = pd.DataFrame(data)
 x = data[0]
 y = data[1]
 
-'''plt.title('GG4.dat')
-plt.xlabel('x')
-plt.ylabel('f(x)')
-plt.grid(which = 'major')
-plt.plot(x, y, linewidth=0.5, color='black')
-plt.show()'''
-
 fig, ax = plt.subplots()
 plt.title('GG4.dat')
 plt.xlabel('x')
