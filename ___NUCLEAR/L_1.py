@@ -12,7 +12,7 @@ m = 1.67 * pow(10, -27)
 h_ = (6.626 * pow(10, -34)) / (2 * pi)
 
 # limits of integration
-r0 = 0
+r0 = pow(10, -20)
 rm = pow(10, -15)
 # rm = float(input('Enter the upper limit of the integration: '))
 
