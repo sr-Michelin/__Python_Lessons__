@@ -12,11 +12,6 @@ m = 1.67 * pow(10, -27)
 # quantum planck constant
 h_ = (6.626 * pow(10, -34)) / (2 * pi)
 
-# limits of integration
-r0 = 0
-rm = pow(10, -15)
-# rm = float(input('Enter the upper limit of the integration: '))
-
 # elementary charge of an electron
 e = 1.6021766208 * pow(10, -19)
 
@@ -28,9 +23,9 @@ z2 = 1
 E0 = pow(10, -16)
 U = 1.6022 * pow(10, -13)
 
-# z1 = float(input('Enter the proton number of element I: '))
-# z2 = float(input('Enter the proton number of element II: '))
-# E0 = float(input('Enter energy E0 [KeV]: ')) * pow(10, -16)
+z1 = float(input('Enter the proton number of element I: '))
+z2 = float(input('Enter the proton number of element II: '))
+E0 = float(input('Enter energy E0 [KeV]: ')) * pow(10, -16)
 
 
 def f(r):
@@ -43,8 +38,10 @@ def f_(r):
     return sqrt(2 * m * ((z1 * z2 * pow(e, 2)) / r - E0))
 
 
+# limits of integration
 a = pow(10, -20)
 b = pow(10, -15)
+
 n = 100000
 h = (b - a) / n
 

@@ -19,11 +19,11 @@ while True:
             message_ = f'Object {user_parse} is online; {message}'
             f.write('\n' + message_)
             print(message_)
-            ti.sleep(1)
+            ti.sleep(60)
 
     else:
         with open('Tg_parse.txt', 'a') as f:
             message_ = f'Object {user_parse} is offline'
             f.write('\n' + message_)
             print(message_)
-            ti.sleep(1)
+            ti.sleep(60)
