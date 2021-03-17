@@ -35,7 +35,7 @@ y = array([fun(E) for E in x])
 # print(f'x = {x}')
 # print(f'y = {y}')
 
-plt.plot(x, y, linewidth=0.7, color='red')
+plt.plot(x, y, linewidth=0.8, color='red')
 plt.grid(color='black', linewidth=0.5, linestyle='--')
 plt.title('Перевірка роботи вікон Гамова')
 plt.xlabel('E, eV')
