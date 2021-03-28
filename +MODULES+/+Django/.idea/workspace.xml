@@ -4,9 +4,6 @@
     <list default="true" id="d1be50e0-bfbb-473c-ab23-9dab233c3b18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_f.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_f.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_site/f_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/f_site/f_site/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_site/f_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/f_site/f_site/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_site/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/f_site/news/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
