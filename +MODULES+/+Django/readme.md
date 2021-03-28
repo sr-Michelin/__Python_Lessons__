@@ -1,6 +1,6 @@
 # Django
 
-The first steps in creating sites using the Django framework
+Перші кроки у створенні сайтів за допомогою фреймворка Django 
 
 Із задоволенням вислухаю усі поради і пропозиції.
 
