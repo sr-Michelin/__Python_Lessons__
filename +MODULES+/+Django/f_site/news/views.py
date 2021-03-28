@@ -6,4 +6,8 @@ from django.http import HttpResponse
 
 def index(request):
     print(request)
-    return HttpResponse('It is my first site!')
+    return HttpResponse('<h1>It is my first site!</h1>')
+
+
+def test(request):
+    return HttpResponse('<h1>Testing page...</h1>')
