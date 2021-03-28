@@ -85,6 +85,10 @@ print(cwd)
 '''////////////////CRUD////////////////'''
 
 '''Рендер ШАБЛОНІВ із контролерів (The template layer)'''
+# templates/news/index.html
+# views.py  --  render(request, template_name='news/index.html', context=context)
 
+'''Superuser (Одмен)'''
+# python manage.py createsuperuser (admin, admin@localhost, admin)
 
 
