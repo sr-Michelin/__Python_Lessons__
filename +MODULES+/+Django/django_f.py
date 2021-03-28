@@ -90,5 +90,8 @@ print(cwd)
 
 '''Superuser (Одмен)'''
 # python manage.py createsuperuser (admin, admin@localhost, admin)
+# models.py ---- class Meta
+
+# admin.py  ---- admin.site.register(News, NewsAdmin)  # реєструєм блок News для адміна
 
 
