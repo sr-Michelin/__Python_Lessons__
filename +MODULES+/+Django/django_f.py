@@ -56,6 +56,7 @@ print(cwd)
 '''без збереження через save()'''
 # news4 = News.objects.create(title='Новина №4', content='Контент новини №4')  # вже без збереження через save()
 
+
 '''перегляду усіх новин'''
 # News.objects.all() - для перегляду усіх новин
 # news = _  # ітератор
@@ -95,3 +96,8 @@ print(cwd)
 # admin.py  ---- admin.site.register(News, NewsAdmin)  # реєструєм блок News для адміна
 # admin.py  ---- list_display, list_display_links, search_fields
 
+'''Зовнішний вигляд'''
+# https://getbootstrap.com/docs/5.0/components
+
+'''Теги'''
+# {% for item in news %}
