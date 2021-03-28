@@ -93,5 +93,5 @@ print(cwd)
 # models.py ---- class Meta
 
 # admin.py  ---- admin.site.register(News, NewsAdmin)  # реєструєм блок News для адміна
-
+# admin.py  ---- list_display, list_display_links, search_fields
 

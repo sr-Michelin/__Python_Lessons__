@@ -34,3 +34,13 @@ class News(models.Model):
         verbose_name = 'Новина'  # об/'єкт однина
         verbose_name_plural = 'Новини'  # об/'єкт множина
         ordering = ['created_at']  # сортування об/'єктів
+
+
+class Category(models.Model):
+    """Поділ на категорії"""
+    title = models.CharField(max_length=150, db_index=True, verbose_name='Назва категорії')  # поле є швидшим для пошуку
+
+    class Meta:
+        verbose_name = 'Категорія'
+        verbose_name_plural = 'Категорії'
+        
