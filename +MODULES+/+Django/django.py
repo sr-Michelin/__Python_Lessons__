@@ -2,7 +2,9 @@ import os
 cwd = os.getcwd()
 print(cwd)
 
-'''cd D:\DOCK\Python_M\vеnv\+LESSONS\+MODULES+\+Django\first_dj_site'''
+'''django-admin'''
+
+'''cd D:\DOCK\Python_M\vеnv\+LESSONS\+MODULES+\+Django\f_site'''
 
 # тестовий запуск:
 '''first_dj_site>python manage.py runserver'''
