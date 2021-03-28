@@ -1,6 +1,8 @@
 import os
-'''cwd = os.getcwd()
-print(cwd)'''
+cwd = os.getcwd()
+print(cwd)
+
+'''cd D:\DOCK\Python_M\vеnv\+LESSONS\+MODULES+\+Django\first_dj_site'''
 
 # тестовий запуск:
 '''first_dj_site>python manage.py runserver'''
