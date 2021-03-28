@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .models import News
 
 
-# Create your views here.
+# Create your views here - контроллери
 
 def index(request):
     """Вивід новин і початкового тексту"""

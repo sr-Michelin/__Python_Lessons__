@@ -5,5 +5,4 @@ from .views import index
 # відкидання лишніх адрес (/news/test)
 urlpatterns = [
     path('', index),
-    # path('test/', test),
 ]

@@ -100,10 +100,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
 # LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = 'uk'  # yeap
 
-TIME_ZONE = 'Europe/Kiev'
+TIME_ZONE = 'Europe/Kiev' # yeap
 
 USE_I18N = True
 
@@ -119,4 +120,3 @@ STATIC_URL = '/static/'
 # для завантаження файлів на сайт:
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-

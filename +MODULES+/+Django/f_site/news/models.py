@@ -1,18 +1,17 @@
 from django.db import models
 
-# Create your models here.
 
+# Create your models here.
 # Моделі опрацьовують дані за допомогою баз даних
+
 # Атрибути SQL:
-'''
-id - INT
-title - Varchar
-content - Text
-created_at - DateTime
-updated_at - DateTime
-photo - Image
-is_published - Boolean
-'''
+# id - INT
+# title - Varchar
+# content - Text
+# created_at - DateTime
+# updated_at - DateTime
+# photo - Image
+# is_published - Boolean
 
 
 class News(models.Model):
