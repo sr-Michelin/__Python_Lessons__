@@ -164,3 +164,105 @@ print(cwd)
 # {{value|add:"2"}} # сума
 # {{news.count}} # кількість елементів
 # {{value|addslashes}} # добавляє "/"
+# {{ value|capfirst }} # mike --> Mike
+# {{ value|center:"1" }} # "Mike" ---> " Mike "
+# {{ value|cut:" " }} # відрізає " "
+
+# {{ value|date:"D d M Y" }} # 'Wed 09 Jan 2008'
+# {{ value|date:"SHORT_DATE_FORMAT" }} "09/01/2008"
+
+# {{ value|default:"Nope" }} # якщо value пуста, то виводить Nope
+# {{ value|default_if_none:"Nope" }} # якщо value == None, то виводить Nope
+
+# {{ value|dictsort:"name" }} # сортування значень словників
+
+# {{ value|divisibleby:"3" }} # True, якщо value ділится на аргумент 3 цілочисельно
+
+# {% autoescape off %} {{<h1>Mike</h1> } {% endautoescape %} # відключає аавтоекранування
+
+# {{ value|filesizeformat }} # виводить розмір value у байтах
+
+# {{ value|first }} # виводить перший елемент списку value
+# {{ value|last }} # виводить останій елемент списку value
+
+# {{ value|floatformat:"0" }} # округлення до певного знаку
+# {{ value|floatformat:"3" }}
+# {{ value|floatformat:"-3" }} # 34.00000 ----> 34
+
+# {{ value|get_digit:"2" }} # 123456789 ---> 8
+
+# {{ value|join:" // " }} # ['a', 'b', 'c'] --> "a // b // c"
+
+# {{ value|length }} # ['a', 'b', 'c', 'd'] --> 4
+# {{ value|length_is:"4" }} # True для ['a', 'b', 'c', 'd']
+
+# {{ value|linebreaks }} # "Joel\nis a slug" --> "<p>Joel<br>is a slug</p"
+# {{ value|linebreaksbr }} # "Joel\nis a slug" --> "Joel<br>is a slug"
+
+# {{ value|linenumbers }} # one --> 1. one
+
+# {{ value|lower }} # "ABCD" --> "abcd"
+# {{ value|make_list }} "ABCD" --> ["A","B","C","D"]
+
+# {{ value|phone2numeric }} # "800-COLLECT" --> "800-2655328" - з кнопкового телефона
+
+# You have {{ num_messages }} message{{ num_messages|pluralize }} # if num_messages = 2 --> 2 messages
+
+# {{ value|random }} # random from value
+
+# {{ var|safe|escape }} # escape
+# {{ some_list|safeseq|join:", " }} # safe для кожного із е-лтів
+
+# {{ value|slugify }} # "Joel is a slug" --> "joel-is-a-slug"
+
+# {{ blog_date|timesince:comment_date }} # стільки часу пройшло із певної дати
+# {{ conference_date|timeuntil:from_date }} # час до певної дати
+
+# {{ value|title }} # перший символ через CAPS
+
+# {{ value|truncatechars:7 }} # "Joel is a slug" --> "Joel i…" - вкорочує по символах
+# {{ value|truncatechars_html:7 }} # "Joel is a slug" --> "<p>Joel i…</p>"
+# {{ value|truncatewords:2 }} # те саме що truncatechars, але вже по словах
+# {{ value|truncatewords_html:2 }} # те саме що truncatechars_html, але вже по словах
+
+'''Сайд-бар по категоріям'''
+# views.py:
+# categories = Category.objects.all()
+#
+#     context = {
+#         'news': news,
+#         'title': 'Список новин',
+#         'category': categories,
+#     }
+
+# index.html:
+#         <div class="container mt-3">
+#     <h1>{{title}}</h1>
+#     <div class="row">
+#
+#         <div class="col-md-2">
+#             <div class="list-group">
+#                 {% for item in categories %}
+#                 <a href="/category/ {{item.pk}}" class="list-group-item list-group-item-action">{{item.title}}</a>
+#                 {% endfor %}
+#             </div>
+#         </div>
+
+# views.py
+# def get_category(request, category_id):
+#     news = News.objects.filter(category_id=category_id)
+#     categories = Category.objects.all()
+#     category = Category.objects.get(pk=category_id)
+#     return render(request, 'news/category.html', {'news': news, 'categories': categories, 'category': category})
+
+# urls.py:
+# urlpatterns = [
+#     path('', index),
+#     path('category/<int:category_id>', get_category),  # категорії на сайд-барі
+# ]
+
+# category.html
+
+
+
+
