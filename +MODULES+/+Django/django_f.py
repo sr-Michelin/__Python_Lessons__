@@ -100,4 +100,29 @@ print(cwd)
 # https://getbootstrap.com/docs/5.0/components
 
 '''Теги'''
-# {% for item in news %}
+# <h1>Mike</h1> --> Mike
+# {% autoescape off %} {{body}} {% endautoescape %}  # вимкнення автоекранування певних символів - безпеки ради
+
+# {% cycle 'text-danger' 'text-success' %} # cycle - тут ми змінюємо кольори заголовків
+
+# {% filter %} {{body}} {% endfilter %} # фільтр
+# {% firstof var1,var2,var3 %} # виводть перший елемент із True
+
+# {% for item in items %} {{body}} {% endfor %} # ітератор
+# or {% for key,value in data.items %} {{key}}:{{value}} {% endfor %} # ітератор у випадку словника
+# {% forloop.counter %} {{body}} # ітератор, який видає номер ітерації
+# {% for item in news %} {% empty %} <li>Елементи відсутні</li> {% endfor %} # при відсутності елементів -> текст про це
+
+# {% if _condition %} or {% elif _condition %} or {% else %} # оператори if з and, or, not; ==,!=, <, >, >=, <=
+
+# {% lorem [count] [method] [random] %}  (C - к-сть параграфів, M (w - слова, p - HTML, b -текстові параграфи),
+# # random - виключає стандатрний шаблон lorem) # вивід випадкового тексту
+
+# It is {% now 'js F Y h:i'%} # часовий тег
+
+# {% spaceless %} <p> text </p> {% endspaceless%} # зжимає HTML-розмітку
+
+#
+
+
+
