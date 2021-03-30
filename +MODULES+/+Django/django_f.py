@@ -122,7 +122,45 @@ print(cwd)
 
 # {% spaceless %} <p> text </p> {% endspaceless%} # зжимає HTML-розмітку
 
-#
 
+'''photo'''
+'''
+<div class="container mt-3">
+    <h1>{{title}}</h1>
+    <div class="row">
+      <div class="col-md-12">
+      {% for item in news %}
+      <div class="card mb-3">
+        <div class="card-header">
+          Категорія: {{ item.category }}
+        </div>
+        <div class="card-body">
+          <div class= "media">
+            {% if item.photo %}
+              <img src="{{item.photo.url}}" alt="" width="350" align="left" hspace="10" class="mr-3">
+            {% else %}
+              <img src="https://static.dw.com/image/19312223_303.jpg" alt="" width="350" align="left" hspace="10"
+                   class="mr-3">
+            {% endif %}
+            <div class="media-body">
+                <h5 class="card-title">{{ item.title }}</h5>
+                <p class="card-text">{{ item.content }}</p>
+                <a href="#" class="btn btn-primary">Читай далі...</a>
+            </div>
+          </div>
+      </div>
+        
+      <div class="card-footer text-muted">
+        опубліковано: {{ item.created_at|date:"Y-m-d H:i:s" }}
+      </div>
+    </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+'''
 
-
+'''Фільтри'''
+# {{value|add:"2"}} # сума
+# {{news.count}} # кількість елементів
+# {{value|addslashes}} # добавляє "/"
