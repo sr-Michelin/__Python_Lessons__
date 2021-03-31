@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1be50e0-bfbb-473c-ab23-9dab233c3b18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/f_site/news/templates/news/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_f.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_f.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_site/news/templates/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/f_site/news/templates/news/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_site/news/templates/news/index2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_site/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/f_site/news/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_site/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/f_site/news/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager" selected="Python.views">
