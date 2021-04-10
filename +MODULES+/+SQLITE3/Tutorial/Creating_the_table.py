@@ -39,7 +39,7 @@ def read_data():
 
 def check_data():
     """Вибіркове зчитування даних"""
-    data = cursor.execute(''' SELECT * FROM e_m WHERE NAME = "Yara" ''')
+    data = cursor.execute(''' SELECT * FROM e_m WHERE NAME != "Mike" ''')
     print('_' * 56)
     print('Checked collum:')
     for record in data:

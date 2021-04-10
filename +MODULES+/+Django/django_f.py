@@ -3,6 +3,8 @@ import os
 cwd = os.getcwd()
 print(cwd)
 
+'''D:\DOCK\Python_M\vеnv\+LESSONS\+MODULES+\+Django'''
+
 '''django-admin'''
 
 '''cd \f_site'''
@@ -262,7 +264,3 @@ print(cwd)
 # ]
 
 # category.html
-
-
-
-
