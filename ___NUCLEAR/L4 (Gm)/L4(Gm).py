@@ -47,9 +47,9 @@ for m_1, m_2, z_1, z_2, s_1 in zip(M1, M2, Z1, Z2, S):
     plt.grid(color='black', linewidth=0.5, linestyle='--')
     plt.title(f'Gamow {i}: {s_1}')
     plt.figtext(0.5, 0.02, f'E0 = {round(E0, 5)} eV , DE = {round(DE, 5)} eV, b ={round(b, 5)}',
-                fontsize=10 , horizontalalignment ="center")
-    plt.xlabel('E, eV',fontsize=10)
-    plt.ylabel('10^19*exp(-(b/sqrt(E)+E/kT))',fontsize=10)
+                fontsize=10, horizontalalignment="center")
+    plt.xlabel('E, eV', fontsize=10)
+    plt.ylabel('10^19*exp(-(b/sqrt(E)+E/kT))', fontsize=10)
     plt.savefig(f'Gw {i} -- {s_1}')
     plt.show()
     i += 1

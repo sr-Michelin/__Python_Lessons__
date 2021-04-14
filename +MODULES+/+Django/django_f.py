@@ -3,11 +3,11 @@ import os
 cwd = os.getcwd()
 print(cwd)
 
-'''D:\DOCK\Python_M\vеnv\+LESSONS\+MODULES+\+Django'''
+'''D:\DOCK\Python_M\venv\+LESSONS\+MODULES+\+Django'''
 
 '''django-admin'''
 
-'''cd \f_site'''
+'''cd f_site'''
 
 # тестовий запуск:
 '''first_dj_site>python manage.py runserver'''
@@ -264,3 +264,4 @@ print(cwd)
 # ]
 
 # category.html
+
