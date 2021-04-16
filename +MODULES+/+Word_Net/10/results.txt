@@ -1,0 +1,12 @@
+вот PRCL
+уже ADVB
+более ADVB
+ста NUMR
+веков NOUN
+император NOUN
+неподвижно ADVB
+восседает VERB
+на PREP
+золотом NOUN
+троне NOUN
+терры NOUN
