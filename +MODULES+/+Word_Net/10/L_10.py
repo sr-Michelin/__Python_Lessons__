@@ -56,4 +56,3 @@ for word in tokens_ukr:
     f_ukr.write(word + ' (' + str(gr[0].tag.cyr_repr) + ')\n')
 f_ukr.close()
 
-input()

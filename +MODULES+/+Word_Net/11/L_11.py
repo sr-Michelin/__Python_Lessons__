@@ -199,5 +199,3 @@ small_text = clear(small_text)
 print(small_text)
 words = small_text.split(' ')
 print(f'Текст, опрацьований збереженим тегуванням: {tagger.tag(words)}')
-
-input()
