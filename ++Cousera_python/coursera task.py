@@ -22,7 +22,7 @@ def come(x):
         elif x < 0:
             for x_ in range(abs(x)):
                 queue.pop(-1)
-        print(queue, ',кількість людей в черзі: {} чоловік'.format(len(queue)))
+        print(queue, ', кількість людей в черзі: {} чоловік'.format(len(queue)))
     except IndexError:
         print('Черга пуста, вивід людей неможливий!')
 

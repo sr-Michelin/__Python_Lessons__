@@ -25,6 +25,8 @@ for line in d_words:
             d_words_cl[i].append(word)
     i += 1
 
+print(f'{d_words_cl = },\n{len(d_words_cl) = }')
+
 # Список усіх слів,таблиця
 dict_words = {}
 i = 0
@@ -33,10 +35,11 @@ for line in d_words_cl:
         if word not in dict_words:
             dict_words[word] = i
             i += 1
+print(f'{dict_words = },\n{len(dict_words) = }')
 
 frame_words = pd.DataFrame(dict_words, range(len(d_words_cl)))
 f_rows, f_cols = frame_words.shape
-print(f_rows, f_cols)
+print(f'{f_rows, f_cols = }')
 
 # занулення таблиці
 for i in range(f_rows):
@@ -48,6 +51,7 @@ for i in range(len(d_words_cl)):
     for word in d_words_cl[i]:
         frame_words.loc[i, word] += 1
 print(frame_words)
+
 # перевірка
 frame_words.to_csv('Test.csv', header=1, index=None, sep=';')
 
@@ -56,7 +60,7 @@ dist_I_sent = []
 for i in range(f_rows):
     dist_I_sent.append(cosine(frame_words.iloc[0], frame_words.iloc[i]))
 
-print('\n{}'.format(dist_I_sent))
+print(f'\n{dist_I_sent = }')
 
 dist_I_sent_copy = list(dist_I_sent)
 two_clses_val = [[-1, 0], [-1, 0]]

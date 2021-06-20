@@ -5,6 +5,7 @@ L = 1
 
 
 def f(x_, x, i):
+    """Програма для пошуку розв\'язків введених рівнянь"""
     while True:
         x_ = sin(x) ** 2 + cos(x) ** 2  # used function
         x += L
@@ -18,4 +19,5 @@ def f(x_, x, i):
 
 
 if __name__ == '__main__':
+    print(f.__doc__)
     f(L, L, 0)
