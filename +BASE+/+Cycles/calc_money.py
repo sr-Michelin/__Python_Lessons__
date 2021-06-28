@@ -1,5 +1,5 @@
 ti = 5
-found_coins = 14990
+found_coins = 9000
 ad_coins = 1660
 ad_coins_ex = 1050*4
 used_coins = 3000

@@ -1,5 +1,6 @@
+import matplotlib.pyplot as plt
 import numpy as np
-
+import matplotlib.pyplot
 
 def f(x):
     """Ф-ція активації у вигляді гіперболічного тангенса"""
@@ -64,3 +65,4 @@ print('Нейронна мережа на основі зворотнього р
 for x in epoch:
     y, out = go_forward(x[0:3])
     print(f"Вихідне значення НМ {x} : {y} => {x[-1]}")
+

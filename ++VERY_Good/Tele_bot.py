@@ -32,7 +32,6 @@ def command_handler(message: Message):
 @bot.message_handler(content_types=['text'])  # Виклик по тексту
 @bot.message_handler(content_types=['sticker'])
 @bot.edited_message_handler(content_types=['text'])  # Бот ревгує на редакію повідомлень у ТГ
-
 def echo_digits(message: Message):
     if 'Hi' in message.text:  # Бот реагує на текст 'Привіт'
         bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAIBcV8txcjB7q7Lknl-aQyOGBKE5C4ZAAI5AANdj6EVVJml4_dDVrwaBA')
