@@ -1,5 +1,6 @@
 # Угадайка на циклах
 import time
+
 a = time.localtime().tm_year - 1998
 running = True
 
@@ -17,4 +18,7 @@ while running:
         print('Ви ввели не число!')
 else:
     print('Цикл завершений...')
-i = input()
+    # continue # пропускає тіло цикулу, повертаючтись на початок
+    # break # миттєве закриття циклу
+
+input()  # для .EXE

@@ -63,6 +63,8 @@ def f4(**args3):
 
 
 print(f4(short='dict', longer="dictionary"))
+
+# анонімні функції
 add = lambda x, y: x * y
 "--------------------------------"
 print(add(2, 5))  # запис через lambda - без return
@@ -70,3 +72,8 @@ print((lambda x, y: x * y)(2, 6))  # ще один запис через lambda 
 "--------------------------------"
 fun = lambda *args: args  # ще один запис через lambda
 print(fun(1, 2, 3))
+
+"--------------------------------"
+A = [x for x in range(11) if x % 2 == 0 and x >= 6]
+B = (lambda x: x)(A)
+print(B)

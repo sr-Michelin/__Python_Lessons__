@@ -19,3 +19,5 @@ for i in fzf_51:
 
 lucky_man = math.floor((len(fzf_51) + 10) * 0.4 - 1)
 print('\nCount of "lucky man" from  fzf_51: ', lucky_man)
+
+fzf_42.index('Mike_Shevchenko', 0, 3)  # пошук за значенням у певних межах (тут 0-3)
