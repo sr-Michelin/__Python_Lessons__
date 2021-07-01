@@ -19,6 +19,6 @@ while True:
         break
 
     try:
-        p.Func(int(input('X: ')), int(input('Y: ')), int(input('Z: ')))
+        p.Func(int(input('\nX: ')), int(input('Y: ')), int(input('Z: ')))
     except ValueError:
         print('Було введенно не число! ')

@@ -31,5 +31,3 @@ with open('Lucl.txt', 'r', encoding='utf-8') as file:
 # 'a+' - дозапис і читання
 with open('open_out.txt', 'w', encoding='utf-8') as file:
     file.write('It\'s working!')
-
-#

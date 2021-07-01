@@ -16,5 +16,5 @@ except KeyboardInterrupt:
     print('!! Відміна читання файлу')
 
 finally:
-    f.close()
+    f.close()  # у будь-якому випадку
     print('\n(Очищення: закриття файла)')
