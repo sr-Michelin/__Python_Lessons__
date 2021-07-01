@@ -22,9 +22,9 @@ pq.hotkey("winleft"+"right")
 pq.typewrite("https://youtu.be/zFSREjGbxEY\n",0.01)
 '''
 
-pq.alert ("деяка інфа","Головне повідомлення", button="Текст кнопки")
-age = pq.prompt ("Введіть свій вік"," Ваш вік")
-print(age)                             # Меню
-pq.confirm ("Вам вже є 18?","Ви впевнені?",("Так,є","Ні, мене підставили!1!!1"))
-pq.password("Введіть пароль","Пароль")
-pq.screenshot("yourPic.jpg")           # Скріншот
+pq.alert("деяка інфа", "Головне повідомлення", button="Текст кнопки")
+age = pq.prompt("Введіть свій вік", " Ваш вік")
+print(age)  # Меню
+pq.confirm("Вам вже є 18?", "Ви впевнені?", ("Так,є", "Ні, мене підставили!1!!1"))
+pq.password("Введіть пароль", "Пароль")
+pq.screenshot("yourPic.jpg")  # Скріншот

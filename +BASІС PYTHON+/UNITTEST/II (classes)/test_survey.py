@@ -9,17 +9,17 @@ from survey import Anon_survey
 
 class Test_Anon_survey(unittest.TestCase):
     def test_store_single_rsp(self):
-        '''Перевірка правильності збереження одної відповідді'''
+        """Перевірка правильності збереження одної відповідді"""
         question = 'What language is your first spoken?'
         my_surv = Anon_survey(question)
         my_surv.store_response('English')
         self.assertIn('English', my_surv.responses)
 
     def test_store_three_rsp(self):
-        '''Перевірка правильності збереження трьох відповіддей'''
+        """Перевірка правильності збереження трьох відповіддей"""
         question = 'What language is your first spoken?'
         my_surv = Anon_survey(question)
-        responses = ['English', 'Ukranian', 'Russian']    # Список трьох мов -  відповіддей на запитання question
+        responses = ['English', 'Ukranian', 'Russian']  # Список трьох мов -  відповіддей на запитання question
         for response in responses:
             my_surv.store_response(response)
 

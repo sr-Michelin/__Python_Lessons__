@@ -42,7 +42,7 @@ def h(x):
     return -f(x)
 
 
-print(optimize.minimize(h, W/2))
+print(optimize.minimize(h, W / 2))
 
 # ---------------------------------------------
 print('\nЩе один варіант (через method="BFGS"):\n', optimize.minimize(f, W, method='BFGS'))

@@ -11,7 +11,6 @@ user_parse = 'Mike_Shevchenko'
 user_parse = 'Seneca_8'
 print('Object:', user_parse)
 
-
 while True:
     if str(client.get_entity(user_parse).status).startswith('UserStatusOnline'):
         with open('Tg_parse.txt', 'a') as f:

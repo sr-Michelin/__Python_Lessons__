@@ -30,7 +30,7 @@ def fun(E):
 
 
 x = linspace(pow(10, -30), 2 * E0, 10000)
-y = array([fun(E) for E in x])
+y = array([fun(i) for i in x])
 
 # print(f'x = {x}')
 # print(f'y = {y}')
