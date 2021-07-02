@@ -1,5 +1,9 @@
 # Об\'єкти - властивості
 
+# Є два типи дескипторів:
+# - data
+# - non-data
+
 class Point:
     def __init__(self, x=0, y=0):
         self.__x, self.__y = x, y
@@ -39,7 +43,7 @@ print(f'{x = }')
 del pt.coordX  # видалення властивостей-
 
 # ----------------------------------------------
-print('\nДаний клас можна переписати через декоратори [@property, @cord_x.setter, @cord_x.setter]:')
+print('\nДаний клас можна переписати через @декоратори [@property, @cord_x.setter, @cord_x.setter]:')
 
 
 class Point_0:
@@ -142,16 +146,6 @@ print('\nАналогічний запис через метод "__set_name__" 
 # - data
 # - non-data
 
-class NonDataDescr:
-    """Тільки для зчитування;
-    NON_DATA - дескриптор"""
-
-    def __set_name__(self, owner, name):
-        self.__name = name
-
-    def __get__(self, instance, owner):
-        return "NonDataDescr __get__"
-
 
 class CoordValue_:
     """Дескрипотр - клас із трьома методами: [__get__, __set__, __delete__]
@@ -178,6 +172,17 @@ class CoordValue_:
     def __delete__(self, obj):
         """Видалення"""
         del self.__value
+
+
+class NonDataDescr:
+    """Тільки для зчитування;
+    NON_DATA - дескриптор"""
+
+    def __set_name__(self, owner, name):
+        self.__name = name
+
+    def __get__(self, instance, owner):
+        return "NonDataDescr __get__"
 
 
 class Point:
