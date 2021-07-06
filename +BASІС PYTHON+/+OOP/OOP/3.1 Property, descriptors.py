@@ -92,7 +92,7 @@ print('\nДобавим ще cordY через дескриптори:')
 
 
 class CoordValue:
-    """Дескрипотр - клас із трьома методами: [__get__, __set__, __delete__]"""
+    """Дескриптор - клас із трьома методами: [__get__, __set__, __delete__]"""
 
     def __init__(self, name):
         """Локальна властивість зберігається у приватній змінній 'name' """
@@ -178,9 +178,6 @@ class NonDataDescr:
     """Тільки для зчитування;
     NON_DATA - дескриптор"""
 
-    def __set_name__(self, owner, name):
-        self.__name = name
-
     def __get__(self, instance, owner):
         return "NonDataDescr __get__"
 
@@ -207,5 +204,5 @@ pt1 = Point(1, 1)
 pt1.coordX, pt1.coordY = 3, 3
 print(f'{pt1.coordX, pt1.coordY = }')
 
-pt1.non_data = 'hello'
+pt1.non_data = 'hello'.upper()
 print(f'\n{pt1.non_data = } -- робота, як із стрічкою, а не із декриптором')

@@ -4,7 +4,7 @@
 
 # super(self.__class__, self).__init__()  # DON'T DO THIS! EVER.
 
-class main():
+class main:
     def __init__(self):
         print('main.__init__(self) - батьківський клас')
 
