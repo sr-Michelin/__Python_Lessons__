@@ -5,6 +5,7 @@ class Point:
         self.__x, self.__y = x, y
 
     def __str__(self):
+        """Стрічковий мнтод. Викликається ф-цією print()"""
         return f'({self.__x}, {self.__y})'
 
     def is_digit(self):
@@ -163,3 +164,4 @@ print('...ітд')
 print('-' * 40)
 
 # -----------------------------------------
+input()

@@ -178,6 +178,9 @@ class NonDataDescr:
     """Тільки для зчитування;
     NON_DATA - дескриптор"""
 
+    def __set_name__(self, owner, name):
+        self.__name = name
+
     def __get__(self, instance, owner):
         return "NonDataDescr __get__"
 
@@ -206,3 +209,4 @@ print(f'{pt1.coordX, pt1.coordY = }')
 
 pt1.non_data = 'hello'.upper()
 print(f'\n{pt1.non_data = } -- робота, як із стрічкою, а не із декриптором')
+input()

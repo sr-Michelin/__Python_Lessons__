@@ -23,3 +23,4 @@ pt.msg = "hello"  # ще один спосіб задавання атрибут
 delattr(pt, 'msg')  # видалення атрибута
 print(f'{pt.__dict__} - вивід словника атрибутів')
 print(isinstance(pt, Point), ', бо pt екземпляр класу Point')  # перевірка належності
+input()
