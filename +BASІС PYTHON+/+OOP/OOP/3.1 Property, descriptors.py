@@ -43,7 +43,7 @@ print(f'{x = }')
 del pt.coordX  # видалення властивостей-
 
 # ----------------------------------------------
-print('\nДаний клас можна переписати через @декоратори [@property, @cord_x.setter, @cord_x.setter]:')
+print('\nДаний клас можна переписати через @декоратори [@property, @cord_x.setter, @cord_x.deleter]:')
 
 
 class Point_0:
@@ -177,9 +177,6 @@ class CoordValue_:
 class NonDataDescr:
     """Тільки для зчитування;
     NON_DATA - дескриптор"""
-
-    def __set_name__(self, owner, name):
-        self.__name = name
 
     def __get__(self, instance, owner):
         return "NonDataDescr __get__"

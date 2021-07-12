@@ -71,7 +71,7 @@ class Line(Pos, Styles):
 li_1 = Line(Point(11, 0), Point(0, 11), 'yellow', 12)
 li_1.draw()
 
-# -----------------------------------------
+# ------------ Line(Pos, Styles)-----------
 print('# -----super() без *args----------- ')
 
 
