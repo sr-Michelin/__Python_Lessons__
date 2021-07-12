@@ -17,7 +17,7 @@ class CoordError(Exception):
 
 
 class ImageXIteration:
-    def __iter__(self, img, y: int):
+    def __init__(self, img, y: int):
         self.__limit = img.width
         self.__y = y
         self.__img = img
@@ -126,26 +126,26 @@ class Image:
         self.__num += 1
         return self.__num'''
 
-
 img = Image(20, 4)
 
 # задаємо кортежу координат кольори
-"""img[random.randint(0, img.width - 1), random.randint(0, img.height - 1)] = f'{Fore.RED}@'
+img[random.randint(0, img.width - 1), random.randint(0, img.height - 1)] = f'{Fore.RED}@'
 img[random.randint(0, img.width - 1), random.randint(0, img.height - 1)] = f'{Fore.YELLOW}*'
 img[random.randint(0, img.width - 1), random.randint(0, img.height - 1)] = f'{Fore.LIGHTYELLOW_EX}+'
 img[random.randint(0, img.width - 1), random.randint(0, img.height - 1)] = f'{Fore.GREEN}%'
-img[random.randint(0, img.width - 1), random.randint(0, img.height - 1)] = f'{Fore.CYAN}₴'"""
-img[1, 1] = '+'
+img[random.randint(0, img.width - 1), random.randint(0, img.height - 1)] = f'{Fore.CYAN}₴'
+
 colour = img[1, 1]  # зчитування певного кольору певного пікселя (за координатами)
 
 # print(f'{img.height, img.width = }')
 # print(f'{colour = }')
 
 # вивід загального екрану із певним пікслем (без методів - ітераторів)
-'''for y in range(img.height):
+print('Вивід загального екрану із певним пікслем (без методів - ітераторів)')
+for y in range(img.height):
     for x in range(img.width):
         print(img[x, y], sep=' ', end=' ')
-    print()'''
+    print()
 
 # Чисельна демонстрація роботи класу MyIter із метод
 """it = MyIter(11)
@@ -153,8 +153,10 @@ print('Iterable MyIter():', end=' ')
 for i in it:
     print(i, sep=',', end=' ')"""
 
+
 # вивід загального екрану із певним пікслем (із методом - ітератором)
+print('\nВивід загального екрану із певним пікслем (із методом - ітератором)')
 for row in img:
     for pixel in row:
-        print(pixel, sep=' ', end='')
+        print(pixel, sep=' ', end=' ')
     print()
